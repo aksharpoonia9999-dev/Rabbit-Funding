@@ -1,0 +1,1480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rabbit Funding provides flexible business financing solutions to help businesses access the funding they need to grow and succeed."
+    />
+    <title>𝚁𝚊𝚋𝚋𝚒𝚝 𝙵𝚞𝚗𝚍𝚒𝚗𝚐</title>
+    <link rel="icon" href="assets/img/svg/rabbit.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      />
+    </noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body class="font-montserrat bg-custom-white">
+    <main>
+      <section class="min-h-full bg-green-gradient px-4">
+        <header class="h-20 md:h-25 items-center flex">
+          <div class="container max-w-285 mx-auto w-full">
+            <nav class="flex items-center justify-between">
+              <div class="right max-w-33 w-full">
+                <div class="logo w-full">
+                  <a href="#">
+                    <img
+                      class="w-full h-12.5 sm:h-auto"
+                      width="132"
+                      height="60"
+                      src="assets/img/svg/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div
+                id="navLinks"
+                class="middle hidden 992:flex items-center gap-6"
+              >
+                <div class="middle-item">
+                  <a
+                    class="font-semibold text-base leading-100 text-custom-black"
+                    href="#"
+                    >Home</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="#"
+                    >Programs</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="#"
+                    >How It Works</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="#"
+                    >Testimonials</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="#"
+                    >About</a
+                  >
+                </div>
+              </div>
+
+              <div class="left flex items-center gap-4">
+                <button
+                  id="contactBtn"
+                  class="group xs:px-8 btn hidden 992:block max-w-38.75 w-full h-14 px-5 border-2 border-solid border-custom-black rounded-full cursor-pointer overflow-hidden relative transition-all duration-500 hover:border-transparent"
+                >
+                  <span
+                    class="relative z-10 text-custom-black group-hover:text-custom-white font-semibold text-base text-nowrap leading-100 transition-colors duration-300"
+                    >Contact Us</span
+                  >
+                  <span
+                    class="absolute inset-0 bg-custom-green scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                  ></span>
+                </button>
+
+                <button
+                  id="menuBtn"
+                  type="button"
+                  aria-label="Toggle menu"
+                  aria-expanded="false"
+                  aria-controls="sidebar"
+                  class="992:hidden relative z-60 w-10 h-10 flex flex-col items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
+                  ></span>
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300"
+                  ></span>
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
+                  ></span>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <div
+          id="overlay"
+          class="fixed inset-0 z-40 bg-black/30 opacity-0 pointer-events-none transition-opacity duration-300 992:hidden"
+        ></div>
+
+        <aside
+          id="sidebar"
+          aria-hidden="true"
+          inert
+          class="fixed top-0 right-0 z-50 h-full w-[60%] bg-custom-white shadow-[-8px_0_30px_rgba(0,0,0,0.15)] translate-x-full transition-transform duration-500 ease-out pt-27.5 px-6 pb-8 overflow-y-auto 992:hidden"
+        >
+          <ul id="sidebarList" class="flex flex-col gap-2"></ul>
+        </aside>
+
+        <!-- nav ending -->
+
+        <div class="container mx-auto max-w-285 w-full">
+          <div
+            class="row w-full items-center flex justify-center flex-col pt-15 pb-15 md:pb-20 lg:pb-30.5"
+          >
+            <h1
+              class="hero-rise heading max-w-134.5 w-full text-[clamp(28px,4.5vw,52px)] text-custom-black text-center font-bold leading-120"
+            >
+              We Fund Founders Not Files.
+            </h1>
+            <p
+              class="max-w-94.25 w-full text-center mt-2 leading-150 text-custom-gray font-normal text-base"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100"
+            >
+              Your story matters more than your credit score. We listen. We
+              move. We fund.
+            </p>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="200"
+              class="story-review flex w-full items-center justify-center gap-4 sm:gap-6 flex-wrap mt-3.75 md:mt-5"
+            >
+              <button
+                class="story-btn btn-wobble group relative isolate cursor-pointer w-56.75 text-nowrap h-12.5 sm:h-15 rounded-full bg-custom-green border-2 border-custom-green px-5 sm:px-8 flex items-center justify-center gap-1.5 overflow-hidden"
+              >
+                <span
+                  class="absolute inset-0 z-0 bg-custom-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                ></span>
+
+                <span
+                  class="relative z-10 text-custom-white font-semibold text-base leading-100 transition-colors duration-300 group-hover:text-custom-green"
+                >
+                  Tell Us the Story
+                </span>
+
+                <span
+                  class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 10.41L6.393 19.017L4.979 17.603L13.586 8.996H6V6.996H17V17.996H15V10.411V10.41Z"
+                      class="fill-custom-white transition-colors duration-300 group-hover:fill-custom-green"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div
+                class="review rounded-12 max-w-52.5 h-15 w-full p-3 border border-solid border-light flex items-center justify-center gap-2"
+              >
+                <div class="max-w-17 w-full">
+                  <img
+                    height="30"
+                    width="68"
+                    class="object-cover w-full h-auto"
+                    src="assets/img/svg/rating.svg"
+                    alt="rating-user"
+                  />
+                </div>
+                <div class="max-w-27.5 w-full flex flex-col gap-0.5">
+                  <div class="star-rating flex gap-[4.94px] items-center">
+                    <img
+                      width="84"
+                      height="14"
+                      src="assets/img/svg/5-star.svg"
+                      alt="5-star"
+                    />
+                    <p
+                      class="rating font-semibold text-custom-gray text-xs leading-100"
+                    >
+                      4.9
+                    </p>
+                  </div>
+                  <h2
+                    class="text-xs font-normal leading-160 text-nowrap text-custom-gray"
+                  >
+                    from 200+ reviews
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="img-parent flex gap-6 flex-wrap items-center justify-center mt-[clamp(35px,8vw,80px)]"
+            >
+              <img
+                width="461"
+                height="439"
+                class="hero-float-a max-w-115.25 shadow-image h-auto w-full object-cover lg:h-109.75 lg:w-115.25 rounded-24"
+                fetchpriority="high"
+                src="assets/img/webp/man.webp"
+                alt="man"
+              />
+              <img
+                width="655"
+                height="439"
+                class="hero-float-b max-w-163.75 shadow-image w-full object-cover lg:h-109.75 lg:w-163.75 rounded-24"
+                fetchpriority="high"
+                src="assets/img/webp/dashboard.webp"
+                alt="dashboard"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4 min-h-fit">
+        <div class="container max-w-285 w-full mx-auto">
+          <div
+            class="row w-full items-center flex flex-col justify-center lg:pt-12.5"
+          >
+            <h2
+              class="font-bold text-[clamp(28px,5vw,48px)] leading-121 text-center text-custom-black w-full"
+              data-aos="fade-up"
+            >
+              Capital That Fits How You Actually Operate
+            </h2>
+
+            <div
+              class="card-container max-w-285 w-full items-center justify-center mt-[clamp(30px,5vw,60px)] flex flex-wrap gap-6"
+              id="card-container-1"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4 min-h-fit">
+        <div class="container max-w-285 w-full mx-auto">
+          <div
+            class="row w-full flex flex-col items-center justify-center py-15 md:py-20 lg:py-42.5"
+          >
+            <h2
+              class="font-bold leading-121 text-[clamp(28px,5vw,48px)] text-custom-black w-full text-center"
+              data-aos="fade-up"
+            >
+              Capital That Fits How You Actually Operate
+            </h2>
+            <p
+              class="max-w-154.5 w-full mt-3 text-base leading-150 text-custom-gray text-center"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              No two businesses are alike. We shape funding around your
+              real-world needs.
+            </p>
+
+            <div
+              class="card-container mt-[clamp(30px,5vw,60px)] w-full flex items-center justify-center flex-wrap gap-6"
+              id="card-container-2"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4 min-h-fit bg-accent-gray">
+        <div class="container max-w-321 w-full mx-auto">
+          <div
+            class="row w-full flex items-center justify-center flex-col py-15 md:py-20 lg:py-30"
+          >
+            <h2
+              class="w-full text-[clamp(28px,5vw,48px)] text-center font-bold leading-121 text-custom-black"
+              data-aos="fade-up"
+            >
+              How it Works
+            </h2>
+
+            <div
+              class="mt-[clamp(30px,5vw,60px)] grid grid-cols-[auto_auto_auto] justify-center gap-x-2 gap-y-6 sm:flex sm:flex-wrap 3xl:flex-nowrap sm:gap-6 sm:justify-center"
+            >
+              <div class="contents sm:flex sm:items-start sm:gap-6">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  class="step flex justify-center sm:w-37"
+                >
+                  <div
+                    class="step-content flex items-center justify-center flex-col"
+                  >
+                    <div
+                      class="size-16 md:size-28 bg-custom-white rounded-full flex items-center justify-center shadow-circle"
+                    >
+                      <svg
+                        width="50"
+                        height="50"
+                        viewBox="0 0 50 50"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-8.75 md:size-12.5"
+                      >
+                        <path
+                          class="flow-icon"
+                          data-flow="0"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1.78571 0C1.31211 0 0.85791 0.219494 0.523024 0.610195C0.188137 1.0009 0 1.5308 0 2.08333V35.4167C0 35.9692 0.188137 36.4991 0.523024 36.8898C0.85791 37.2805 1.31211 37.5 1.78571 37.5H19.6429V45.8333H14.2857V50H35.7143V45.8333H30.3571V37.5H48.2143C48.6879 37.5 49.1421 37.2805 49.477 36.8898C49.8119 36.4991 50 35.9692 50 35.4167V2.08333C50 1.5308 49.8119 1.0009 49.477 0.610195C49.1421 0.219494 48.6879 0 48.2143 0H1.78571ZM23.2143 45.8333V37.5H26.7857V45.8333H23.2143ZM24.4786 25.8208L36.9786 12.8L34.4536 9.85417L23.2143 21.4844L17.3357 16.1042L14.8071 19.05L21.95 25.8208C22.1159 26.0148 22.3129 26.1688 22.5299 26.2738C22.7468 26.3788 22.9794 26.4329 23.2143 26.4329C23.4492 26.4329 23.6817 26.3788 23.8987 26.2738C24.1156 26.1688 24.3127 26.0148 24.4786 25.8208Z"
+                          fill="#2B2B2B"
+                        />
+                      </svg>
+                    </div>
+                    <h2
+                      class="mt-4 max-w-20.5 text-center text-[clamp(16px,2vw,24px)] font-semibold leading-121"
+                    >
+                      Apply Online
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="150"
+                  class="self-start flex items-center w-12 sm:w-22 shrink-0 h-3.5 mt-8.25 md:mt-12.25"
+                >
+                  <svg
+                    class="w-full h-auto"
+                    width="88"
+                    height="14"
+                    viewBox="0 0 88 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      class="flow-line"
+                      data-flow="1"
+                      y1="7"
+                      x2="88"
+                      y2="7"
+                      stroke="#B7B7B7"
+                      stroke-width="2"
+                      stroke-dasharray="8 8"
+                    />
+                    <path
+                      class="flow-head"
+                      data-flow="1"
+                      d="M50 7L38 14L38 0L50 7Z"
+                      fill="#B7B7B7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="contents sm:flex sm:items-start sm:gap-6">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  class="step flex justify-center sm:w-37"
+                >
+                  <div
+                    class="step-content flex items-center justify-center flex-col"
+                  >
+                    <div
+                      class="size-16 md:size-28 bg-custom-white rounded-full flex items-center justify-center shadow-circle"
+                    >
+                      <svg
+                        class="size-8.75 md:w-12.75 md:h-11.25"
+                        width="51"
+                        height="45"
+                        viewBox="0 0 51 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="flow-icon"
+                          data-flow="2"
+                          d="M8.11378 11.8421C8.11378 8.70138 9.33498 5.6893 11.5087 3.46847C13.6825 1.24765 16.6307 0 19.7049 0C22.779 0 25.7273 1.24765 27.901 3.46847C30.0748 5.6893 31.296 8.70138 31.296 11.8421C31.296 14.9828 30.0748 17.9949 27.901 20.2157C25.7273 22.4366 22.779 23.6842 19.7049 23.6842C16.6307 23.6842 13.6825 22.4366 11.5087 20.2157C9.33498 17.9949 8.11378 14.9828 8.11378 11.8421ZM47.6928 8.64L48.8449 10.6934C50.2578 13.2071 51.0008 16.0553 51 18.9539C50.9992 21.8525 50.2545 24.7003 48.8403 27.2132L47.6835 29.2666L43.666 26.9053L44.8205 24.8518C45.8308 23.0571 46.3629 21.0231 46.3637 18.9527C46.3645 16.8824 45.834 14.8479 44.8251 13.0524L43.6707 10.9989L47.6928 8.64ZM40.657 12.7658L41.8091 14.8216C42.5157 16.0781 42.8875 17.5018 42.8875 18.9509C42.8875 20.4 42.5157 21.8238 41.8091 23.0803L40.65 25.1337L36.6325 22.7724L37.787 20.7189C38.0901 20.1803 38.2495 19.5699 38.2495 18.9486C38.2495 18.3273 38.0901 17.7168 37.787 17.1782L36.6349 15.1247L40.657 12.7658ZM0 40.2632C0 37.1224 1.2212 34.1104 3.39496 31.8895C5.56871 29.6687 8.51695 28.4211 11.5911 28.4211H27.8187C30.8928 28.4211 33.8411 29.6687 36.0148 31.8895C38.1886 34.1104 39.4098 37.1224 39.4098 40.2632V45H0V40.2632Z"
+                          fill="#2B2B2B"
+                        />
+                      </svg>
+                    </div>
+                    <h2
+                      class="mt-4 max-w-37 text-center text-[clamp(16px,2vw,24px)] font-semibold leading-121"
+                    >
+                      You Talk. We Listen.
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="450"
+                  class="self-start hidden sm:flex items-center w-12 sm:w-22 shrink-0 h-3.5 mt-8.25 md:mt-12.25"
+                >
+                  <svg
+                    class="w-full h-auto"
+                    width="88"
+                    height="14"
+                    viewBox="0 0 88 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      class="flow-line"
+                      data-flow="3"
+                      y1="7"
+                      x2="88"
+                      y2="7"
+                      stroke="#B7B7B7"
+                      stroke-width="2"
+                      stroke-dasharray="8 8"
+                    />
+                    <path
+                      class="flow-head"
+                      data-flow="3"
+                      d="M50 7L38 14L38 0L50 7Z"
+                      fill="#B7B7B7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="contents sm:flex sm:items-start sm:gap-6">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  class="step flex justify-center sm:w-37"
+                >
+                  <div
+                    class="step-content flex items-center justify-center flex-col"
+                  >
+                    <div
+                      class="size-16 md:size-28 bg-custom-white rounded-full flex items-center justify-center shadow-circle"
+                    >
+                      <svg
+                        class="size-8.75 md:size-12"
+                        width="48"
+                        height="46"
+                        viewBox="0 0 48 46"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="flow-icon"
+                          data-flow="4"
+                          d="M9.02667 28.3093H14.92L28.9547 14.256C29.184 13.9929 29.3556 13.7173 29.4693 13.4293C29.5831 13.1413 29.6409 12.8551 29.6427 12.5707C29.6444 12.2862 29.5867 12.0044 29.4693 11.7253C29.3556 11.448 29.1893 11.1769 28.9707 10.912L26.504 8.37867C26.2729 8.14933 26.008 7.97778 25.7093 7.864C25.4071 7.75022 25.1093 7.69333 24.816 7.69333C24.5316 7.69333 24.2471 7.74222 23.9627 7.84C23.68 7.936 23.4071 8.11556 23.144 8.37867L9.02667 22.416V28.3093ZM24.8 15.1707L22.2667 12.6507L24.816 10.104L27.2827 12.6373L24.8 15.1707ZM23.5093 28.3093H38.976V25.6427H26.176L23.5093 28.3093ZM0 45.5387V4.30933C0 3.08089 0.411556 2.056 1.23467 1.23467C2.05778 0.413334 3.08178 0.00177778 4.30667 0H43.6933C44.92 0 45.944 0.411556 46.7653 1.23467C47.5867 2.05778 47.9982 3.08267 48 4.30933V33.0267C48 34.2533 47.5884 35.2782 46.7653 36.1013C45.9422 36.9244 44.9182 37.3351 43.6933 37.3333H8.20533L0 45.5387Z"
+                          fill="#2B2B2B"
+                        />
+                      </svg>
+                    </div>
+                    <h2
+                      class="mt-4 text-nowrap text-center text-[clamp(16px,2vw,24px)] font-semibold leading-121"
+                    >
+                      We Review <br />Your Story
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="750"
+                  class="self-start flex items-center w-12 sm:w-22 shrink-0 h-3.5 mt-8.25 md:mt-12.25"
+                >
+                  <svg
+                    class="w-full h-auto"
+                    width="88"
+                    height="14"
+                    viewBox="0 0 88 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      class="flow-line"
+                      data-flow="5"
+                      y1="7"
+                      x2="88"
+                      y2="7"
+                      stroke="#B7B7B7"
+                      stroke-width="2"
+                      stroke-dasharray="8 8"
+                    />
+                    <path
+                      class="flow-head"
+                      data-flow="5"
+                      d="M50 7L38 14L38 0L50 7Z"
+                      fill="#B7B7B7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="contents sm:flex sm:items-start sm:gap-6">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                  class="step flex justify-center sm:w-37"
+                >
+                  <div
+                    class="step-content flex items-center justify-center flex-col"
+                  >
+                    <div
+                      class="size-16 md:size-28 bg-custom-white rounded-full flex items-center justify-center shadow-circle"
+                    >
+                      <svg
+                        class="size-7.5 md:size-12.5"
+                        width="50"
+                        height="50"
+                        viewBox="0 0 50 50"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="flow-icon"
+                          data-flow="6"
+                          d="M49.8764 2.79035C50.0106 2.41825 50.0361 2.01562 49.95 1.62955C49.8638 1.24348 49.6695 0.88992 49.3898 0.610209C49.11 0.330499 48.7565 0.1362 48.3704 0.0500312C47.9843 -0.0361375 47.5817 -0.0106146 47.2095 0.123616L1.37329 16.7907C0.97664 16.9345 0.632999 17.1953 0.387833 17.5387C0.142668 17.8821 0.00753244 18.2918 0.000305769 18.7136C-0.0069209 19.1355 0.114102 19.5495 0.347362 19.9011C0.580622 20.2527 0.915127 20.5251 1.30662 20.6824L19.7786 28.0701L32.2919 15.624L34.3754 17.7074L22.3955 30.7285L29.3167 48.6914C29.4736 49.0831 29.7458 49.4178 30.0971 49.6514C30.4484 49.885 30.8624 50.0065 31.2842 49.9997C31.7061 49.993 32.1159 49.8583 32.4595 49.6135C32.8032 49.3687 33.0644 49.0254 33.2087 48.6289L49.8764 2.79035Z"
+                          fill="#2B2B2B"
+                        />
+                      </svg>
+                    </div>
+                    <h2
+                      class="mt-4 text-nowrap text-center text-[clamp(16px,2vw,24px)] font-semibold leading-121"
+                    >
+                      Offer Tailored <br />To You
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-delay="1050"
+                  class="self-start hidden sm:flex items-center w-12 sm:w-22 shrink-0 h-3.5 mt-8.25 md:mt-12.25"
+                >
+                  <svg
+                    class="w-full h-auto"
+                    width="88"
+                    height="14"
+                    viewBox="0 0 88 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      class="flow-line"
+                      data-flow="7"
+                      y1="7"
+                      x2="88"
+                      y2="7"
+                      stroke="#B7B7B7"
+                      stroke-width="2"
+                      stroke-dasharray="8 8"
+                    />
+                    <path
+                      class="flow-head"
+                      data-flow="7"
+                      d="M50 7L38 14L38 0L50 7Z"
+                      fill="#B7B7B7"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="contents sm:flex sm:items-start sm:gap-6">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="1200"
+                  class="step flex justify-center sm:w-37"
+                >
+                  <div
+                    class="step-content flex items-center justify-center flex-col"
+                  >
+                    <div
+                      class="size-16 md:size-28 bg-custom-white rounded-full flex items-center justify-center shadow-circle"
+                    >
+                      <svg
+                        class="size-8.75 md:size-16"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="flow-icon"
+                          data-flow="8"
+                          d="M36 42.6667C36 43.7276 35.5786 44.745 34.8284 45.4952C34.0783 46.2453 33.0609 46.6667 32 46.6667C30.9391 46.6667 29.9217 46.2453 29.1716 45.4952C28.4214 44.745 28 43.7276 28 42.6667C28 41.6059 28.4214 40.5885 29.1716 39.8383C29.9217 39.0882 30.9391 38.6667 32 38.6667C33.0609 38.6667 34.0783 39.0882 34.8284 39.8383C35.5786 40.5885 36 41.6059 36 42.6667Z"
+                          fill="#2B2B2B"
+                        />
+                        <path
+                          class="flow-icon"
+                          data-flow="8"
+                          d="M38.2587 1.76001L46.7387 13.6427L52.3307 11.736L57.4347 26.6667H60V58.6667H4V26.6667H5.36V26.64L7.088 26.656L38.2587 1.76001ZM25.0587 26.6667H51.8L49.0347 18.5787L44.976 19.8773L25.0587 26.6667ZM20.904 22.4453L41.4667 15.44L37.1893 9.44001L20.904 22.4453ZM14.6667 32H9.33333V37.3333C10.7478 37.3333 12.1044 36.7714 13.1046 35.7712C14.1048 34.771 14.6667 33.4145 14.6667 32ZM41.3333 42.6667C41.3333 41.441 41.0919 40.2273 40.6229 39.095C40.1538 37.9626 39.4663 36.9337 38.5997 36.067C37.733 35.2003 36.7041 34.5128 35.5717 34.0438C34.4393 33.5748 33.2257 33.3333 32 33.3333C30.7743 33.3333 29.5607 33.5748 28.4283 34.0438C27.2959 34.5128 26.267 35.2003 25.4003 36.067C24.5337 36.9337 23.8462 37.9626 23.3771 39.095C22.9081 40.2273 22.6667 41.441 22.6667 42.6667C22.6667 45.142 23.65 47.516 25.4003 49.2663C27.1507 51.0167 29.5246 52 32 52C34.4754 52 36.8493 51.0167 38.5997 49.2663C40.35 47.516 41.3333 45.142 41.3333 42.6667ZM54.6667 53.3333V48C53.2522 48 51.8956 48.5619 50.8954 49.5621C49.8952 50.5623 49.3333 51.9189 49.3333 53.3333H54.6667ZM49.3333 32C49.3333 33.4145 49.8952 34.771 50.8954 35.7712C51.8956 36.7714 53.2522 37.3333 54.6667 37.3333V32H49.3333ZM9.33333 53.3333H14.6667C14.6667 51.9189 14.1048 50.5623 13.1046 49.5621C12.1044 48.5619 10.7478 48 9.33333 48V53.3333Z"
+                          fill="#2B2B2B"
+                        />
+                      </svg>
+                    </div>
+                    <h2
+                      class="mt-4 text-center text-[clamp(16px,2vw,24px)] font-semibold leading-121"
+                    >
+                      Funded <br />
+                      Fast
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4 min-h-fit">
+        <div class="container max-w-285 w-full mx-auto">
+          <div
+            class="row w-full flex flex-wrap gap-[clamp(24px,4vw,55px)] items-center justify-center py-15 md:py-20 lg:py-42.5"
+          >
+            <div class="max-w-139 w-full" data-aos="fade-right">
+              <img
+                loading="lazy"
+                decoding="async"
+                width="556"
+                height="352"
+                class="hero-float-a object-cover"
+                src="assets/img/webp/big-rabbit.webp"
+                alt="rabbit-on-world"
+              />
+            </div>
+            <div class="max-w-132.25 w-full">
+              <h2
+                class="text-[clamp(28px,5vw,48px)] leading-121 text-custom-black font-bold"
+                data-aos="fade-left"
+              >
+                Why Rabbit?
+              </h2>
+              <div
+                class="w-full mt-[clamp(20px,3vw,32px)] flex flex-col gap-2.5"
+              >
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                  class="group relative isolate max-w-94.5 w-full bg-custom-white rounded-12 p-4 cursor-pointer flex gap-3 items-center overflow-hidden"
+                >
+                  <span
+                    class="absolute inset-0 -z-10 bg-accent-gray scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-700 ease-out"
+                  ></span>
+
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="32"
+                    height="32"
+                    class="relative z-10 object-contain size-6 sm:size-8"
+                    src="assets/img/svg/lend-money.svg"
+                    alt="lend-money"
+                  />
+
+                  <h2
+                    class="relative z-10 text-[clamp(16px,2vw,24px)] font-semibold text-custom-gray leading-121"
+                  >
+                    We lend our own capital
+                  </h2>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                  class="group relative isolate max-w-116.5 w-full bg-accent-gray rounded-12 p-4 cursor-pointer flex gap-3 items-center overflow-hidden"
+                >
+                  <span
+                    class="absolute inset-0 -z-10 bg-custom-white scale-x-0 origin-right group-hover:scale-x-100 transition-transform duration-700 ease-out"
+                  ></span>
+
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="32"
+                    height="32"
+                    class="relative z-10 object-contain size-[26.67px]"
+                    src="assets/img/svg/message.svg"
+                    alt="message"
+                  />
+
+                  <h2
+                    class="relative z-10 text-[clamp(16px,2vw,24px)] font-semibold text-custom-gray leading-121"
+                  >
+                    We underwrite people, not files
+                  </h2>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                  class="group relative isolate max-w-132.25 w-full bg-custom-white rounded-12 p-4 cursor-pointer flex gap-3 items-center overflow-hidden"
+                >
+                  <span
+                    class="absolute inset-0 -z-10 bg-accent-gray scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-700 ease-out"
+                  ></span>
+
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="32"
+                    height="32"
+                    class="relative z-10 object-contain size-[26.67px]"
+                    src="assets/img/svg/time.svg"
+                    alt="time"
+                  />
+
+                  <h2
+                    class="relative z-10 text-[clamp(16px,2vw,24px)] font-semibold text-custom-gray leading-121"
+                  >
+                    Same-day capital. No waiting games
+                  </h2>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                  class="group relative isolate max-w-105.5 w-full bg-custom-white rounded-12 p-4 cursor-pointer flex gap-3 items-center overflow-hidden"
+                >
+                  <span
+                    class="absolute inset-0 -z-10 bg-accent-gray scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-700 ease-out"
+                  ></span>
+
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width="32"
+                    height="32"
+                    class="relative z-10 object-contain size-6 sm:size-7.25"
+                    src="assets/img/svg/tick.svg"
+                    alt="tick"
+                  />
+
+                  <h2
+                    class="relative z-10 text-[clamp(16px,2vw,24px)] font-semibold text-custom-gray leading-121"
+                  >
+                    Real humans. Real funding.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="min-h-fit px-4">
+        <div class="container max-w-247 mx-auto w-full">
+          <div
+            class="row w-full flex items-center justify-center flex-wrap gap-[clamp(30px,6vw,80px)]"
+          >
+            <div class="max-w-107.25 w-full" data-aos="fade-right">
+              <h2
+                class="text-[clamp(28px,5vw,48px)] leading-121 font-bold text-custom-black"
+              >
+                About Rabbit
+              </h2>
+              <div
+                class="bg-custom-white p-4 shadow-card w-full rounded-16 mt-[clamp(16px,3vw,24px)]"
+              >
+                <h2
+                  class="text-[clamp(16px,2vw,24px)] font-semibold text-custom-gray leading-121"
+                >
+                  Built to Break the Rules
+                </h2>
+                <p
+                  class="text-base text-custom-gray font-normal leading-150 mt-2"
+                >
+                  We started Rabbit because we saw how broken traditional
+                  funding was. <br />
+                  Too slow. Too robotic. Too many brokers and bots. <br />
+                  So we built something fast, human, and direct — because that’s
+                  what business owners actually need.
+                </p>
+              </div>
+            </div>
+            <div
+              class="max-w-119.5 w-full"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
+              <img
+                loading="lazy"
+                decoding="async"
+                width="478"
+                height="308"
+                class="img-sway object-cover lg:h-77"
+                src="assets/img/webp/group-people.webp"
+                alt="group-people"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="min-h-fit px-4">
+        <div class="container max-w-259 w-full mx-auto">
+          <div
+            class="row w-full flex flex-col items-center justify-center py-15 md:py-20 lg:py-42.5"
+          >
+            <h2
+              class="text-[clamp(28px,5vw,48px)] text-center font-bold text-custom-black leading-121"
+              data-aos="fade-up"
+            >
+              OUR VALUES
+            </h2>
+
+            <div
+              class="w-full mt-[clamp(30px,5vw,60px)] flex items-center justify-center gap-8 flex-wrap"
+            >
+              <div class="max-w-81" data-aos="flip-up" data-aos-delay="0">
+                <div
+                  class="rounded-24 cursor-pointer h-auto md:h-62.25 shadow-gridcard max-w-81 bg-custom-white p-8 flex items-center justify-center flex-col group hover:bg-custom-green transition-all duration-300 ease-in-out"
+                >
+                  <div>
+                    <svg
+                      width="82"
+                      height="82"
+                      viewBox="0 0 82 82"
+                      class="sm:size-20.5 size-16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M39.6443 12.1216C35.7644 12.5341 32.1369 15.0494 30.4096 18.5628C29.506 20.3595 29.1738 21.8633 29.1738 24.0193C29.1871 29.356 32.7747 33.9873 38.0099 35.4113C38.8736 35.6509 39.4317 35.7041 40.9996 35.7041C42.5675 35.7041 43.1255 35.6509 43.9892 35.4113C49.2244 33.9873 52.812 29.356 52.8253 24.0193C52.8253 22.4622 52.6526 21.3177 52.2672 20.1732C50.7259 15.6749 46.8991 12.614 42.1821 12.1083C41.4912 12.0417 40.88 11.9885 40.8003 12.0018C40.7338 12.0018 40.2023 12.055 39.6443 12.1216Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M18.8633 23.141C17.0031 23.4471 15.4219 24.2589 14.0134 25.6696C12.3525 27.3331 11.542 29.1697 11.4091 31.5386C11.1301 36.5958 15.1827 40.8545 20.2718 40.8545C22.4509 40.8545 24.6034 40.0161 26.1979 38.5521C29.5198 35.5045 30.1044 30.7534 27.6197 26.9871C26.5035 25.2969 24.5104 23.8729 22.5439 23.3539C21.5341 23.1011 19.7934 22.9946 18.8633 23.141Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M60.5993 23.1017C56.5068 23.7672 53.464 26.8281 52.9325 30.8206C52.6535 32.8701 53.1451 35.0261 54.2746 36.7695C56.7593 40.5757 61.6225 41.9332 65.6485 39.9369C67.522 39.0053 68.7976 37.7144 69.7145 35.8512C70.4187 34.3873 70.6711 33.1496 70.5914 31.5393C70.4585 29.1704 69.648 27.3338 67.9871 25.6703C66.3262 24.02 64.5324 23.2082 62.2204 23.1017C61.5427 23.0751 60.8252 23.0751 60.5993 23.1017Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M33.7187 38.1925C31.4332 38.5119 29.7192 39.3637 28.0317 41.0538C27.0351 42.0386 26.7162 42.4645 26.2246 43.476C25.0819 45.7384 25.1218 45.2992 25.1218 57.6228C25.1218 68.2962 25.1218 68.4825 25.3875 68.935C25.5469 69.1878 25.8658 69.5072 26.1183 69.6669C26.5834 69.9331 26.7428 69.9331 41.0001 69.9331C55.2575 69.9331 55.4169 69.9331 55.882 69.6669C56.1344 69.5072 56.4533 69.1878 56.6128 68.935C56.8785 68.4825 56.8785 68.2962 56.8785 57.6228C56.8785 45.2992 56.9184 45.7384 55.7757 43.476C54.9518 41.8257 53.2909 40.1222 51.6699 39.2838C49.4775 38.1526 49.4509 38.1393 41.5316 38.1127C37.6916 38.0994 34.1837 38.1393 33.7187 38.1925Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M14.9704 43.3965C11.9143 43.9953 9.38968 45.9251 7.98122 48.7331C6.98467 50.7294 6.97138 50.8891 7.01125 58.7011L7.05111 65.555L7.54274 66.5531C8.16724 67.8307 9.04421 68.7091 10.2666 69.2947C11.5688 69.9201 12.273 69.9867 17.3355 70H21.6273L21.521 69.4943C21.4546 69.2281 21.4014 63.785 21.4014 57.4235V45.8452L21.707 44.7539C21.8665 44.155 22.0392 43.5695 22.0791 43.463C22.1588 43.2767 21.8133 43.2501 18.8636 43.2634C17.0432 43.2767 15.2893 43.3299 14.9704 43.3965Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M59.921 43.4497C59.9609 43.5695 60.1336 44.155 60.2931 44.7539L60.5987 45.8452V57.4235C60.5987 63.785 60.5456 69.2281 60.4791 69.5076L60.3728 70H64.6646C69.7271 69.9867 70.4313 69.9201 71.7335 69.2947C72.9559 68.7091 73.8329 67.8307 74.4574 66.5531L74.949 65.555L74.9889 58.7011C75.0288 50.8891 75.0155 50.7294 74.0189 48.7331C72.7699 46.2445 70.7768 44.541 68.0396 43.636C67.1759 43.3565 66.8305 43.3299 63.4688 43.2767C60.1204 43.2368 59.8413 43.2501 59.921 43.4497Z"
+                        fill="#7AC943"
+                      />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-[clamp(16px,2vw,24px)] font-semibold text-center mt-4 leading-121 text-custom-black group-hover:text-custom-white transition-all duration-300 ease-in-out"
+                  >
+                    We Return Every Call. Every Time.
+                  </h2>
+                </div>
+              </div>
+              <div class="max-w-81" data-aos="flip-up" data-aos-delay="150">
+                <div
+                  class="rounded-24 cursor-pointer h-auto md:h-62.25 shadow-gridcard max-w-81 bg-custom-white p-8 flex items-center justify-center flex-col group hover:bg-custom-green transition-all duration-300 ease-in-out"
+                >
+                  <div>
+                    <svg
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M7.78781 0.145933C3.96202 1.00711 1.32824 3.46598 0.261107 7.1713C0.0340575 7.95315 0 8.33841 0 10.0041C0 12.157 0.13623 12.8709 0.817379 14.3553C1.53259 15.953 2.06615 16.4062 3.19005 16.4062C3.99608 16.4062 4.16636 16.3043 6.19846 14.6839C9.71773 11.8851 12.851 8.66702 15.5075 5.13167C16.2795 4.11186 16.3362 3.98722 16.3816 3.364C16.4157 2.97874 16.3703 2.54815 16.2908 2.35552C15.9957 1.64166 14.8718 0.939119 13.1121 0.372559C12.2493 0.0892773 11.9428 0.0552826 10.3308 0.0212898C9.03658 -0.0127048 8.31002 0.0326214 7.78781 0.145933Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M45.7508 0.1346C43.7869 0.58785 42.1975 1.43769 41.7775 2.25354C41.6866 2.42351 41.6072 2.86543 41.6072 3.23936C41.6072 4.02121 41.7094 4.20251 43.3441 6.24214C45.8076 9.3129 48.7138 12.2137 51.7904 14.6726C53.8338 16.3043 54.0154 16.4062 54.7988 16.4062C55.1734 16.4062 55.6161 16.3269 55.7864 16.2363C56.4676 15.8963 57.1147 14.8312 57.6823 13.1202C57.9888 12.2024 58.0002 12.0664 58.0002 10.0608C58.0002 8.10046 57.9775 7.89649 57.6823 6.94467C56.6719 3.64728 54.2538 1.27905 50.9162 0.304569C49.8264 -0.0127048 46.818 -0.103355 45.7508 0.1346Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M26.8489 6.74035C22.6712 7.05762 18.1642 8.63266 14.5996 11.0575C8.53733 15.1595 4.62072 21.3916 3.50818 28.7569C3.23572 30.5359 3.23572 34.0939 3.50818 35.9523C4.15527 40.3601 5.98302 44.6886 8.66221 48.1333L9.24118 48.8699L6.76634 51.3627C4.13256 54.0256 4.03039 54.1729 4.03039 55.272C4.03039 56.3485 4.60937 57.3003 5.54027 57.7535C6.22142 58.0822 7.37938 58.0822 8.03782 57.7535C8.32163 57.6062 9.47959 56.5524 10.91 55.136L13.3054 52.7565L14.3725 53.493C17.8123 55.8499 21.5586 57.289 25.6342 57.8215C27.3711 58.0482 30.6406 58.0482 32.3776 57.8215C36.4531 57.289 40.1994 55.8499 43.6392 53.493L44.7063 52.7565L47.1017 55.136C48.5321 56.5524 49.6901 57.6062 49.9739 57.7535C50.5415 58.0368 51.7335 58.0822 52.3125 57.8442C53.6975 57.255 54.3673 55.5213 53.7429 54.1389C53.584 53.7763 52.8234 52.9378 51.1432 51.2494L48.7705 48.8699L49.3382 48.1333C52.0173 44.7 53.8565 40.3714 54.5035 35.9523C54.776 34.0939 54.776 30.5359 54.5035 28.7569C53.6408 23.0913 51.1546 18.1169 47.2266 14.1963C41.8569 8.83662 34.5572 6.16245 26.8489 6.74035ZM29.8687 14.2416C30.4817 14.5249 30.9131 15.0915 31.0493 15.8393C31.1174 16.2019 31.1628 19.3633 31.1628 23.8732V31.3065L36.0444 34.6378C39.6999 37.1307 40.9941 38.0712 41.1871 38.3771C41.5731 39.0117 41.539 40.0202 41.1076 40.5867C40.4946 41.4026 39.6204 41.7199 38.8258 41.4366C38.19 41.1986 27.6776 33.992 27.3484 33.5614C27.2008 33.3687 27.0305 32.9382 26.9624 32.6095C26.8148 31.805 26.8148 16.6438 26.9624 15.8393C27.2349 14.4003 28.5858 13.6637 29.8687 14.2416Z"
+                        fill="#7AC943"
+                      />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-[clamp(16px,2vw,24px)] font-semibold text-center mt-4 leading-121 text-custom-black group-hover:text-custom-white transition-all duration-300 ease-in-out"
+                  >
+                    We Do What’s Right. Even When It Doesn’t Pay Us.
+                  </h2>
+                </div>
+              </div>
+              <div class="max-w-81" data-aos="flip-up" data-aos-delay="300">
+                <div
+                  class="rounded-24 cursor-pointer h-auto md:h-62.25 shadow-gridcard max-w-81 bg-custom-white p-8 flex items-center justify-center flex-col group hover:bg-custom-green transition-all duration-300 ease-in-out"
+                >
+                  <div>
+                    <svg
+                      width="72"
+                      height="70"
+                      viewBox="0 0 72 70"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M32.0591 0.352867C26.629 1.5171 22.3113 4.54034 19.3889 9.2536C18.201 11.1502 17.4657 13.0843 16.9566 15.563C16.1459 19.3937 16.7304 24.1445 18.4461 27.6372C21.0104 32.8762 25.724 36.6881 31.3992 38.1152C33.7937 38.7161 38.1868 38.7161 40.5813 38.1152C44.0505 37.2515 46.841 35.7117 49.4429 33.2142C52.1391 30.6229 53.8549 27.7498 54.8164 24.182C55.2312 22.6047 55.3066 22.0414 55.3066 19.2998C55.3066 16.5582 55.2312 15.9949 54.8164 14.4175C52.9687 7.58236 47.7271 2.3621 40.9207 0.578201C38.3565 -0.097805 34.5667 -0.191692 32.0591 0.352867ZM36.7538 8.78415C37.0367 9.06582 37.1309 9.40382 37.1309 10.0798C37.1309 10.9812 37.1309 10.9812 37.9605 11.3004C39.0164 11.6947 40.0534 12.7463 40.4493 13.7979C40.7698 14.5865 40.751 14.6429 40.3928 15.1311C39.8648 15.8446 39.1672 15.8822 38.6581 15.2438C38.4507 14.9621 38.2622 14.6429 38.2622 14.5114C38.2622 14.0607 37.1498 13.3096 36.2825 13.1782C34.529 12.9153 32.7944 13.9105 32.7944 15.1686C32.7944 16.07 33.6051 16.746 36.3768 18.1731C40.7321 20.4077 41.9577 21.8536 41.4486 24.2008C41.1092 25.7782 39.8837 26.9799 38.1302 27.4869C37.1309 27.7686 37.1309 27.7686 37.1309 28.5573C37.1309 29.4586 37.0178 29.6652 36.4333 29.9844C36.0939 30.1534 35.9054 30.1534 35.5849 29.9844C34.9815 29.6652 34.8684 29.4586 34.8684 28.4822C34.8684 27.6372 34.8495 27.5996 34.0388 27.2992C32.9829 26.9048 31.946 25.8533 31.55 24.8017C31.2672 24.1069 31.2672 23.9191 31.4746 23.506C31.7574 22.9803 32.5116 22.7174 32.9641 22.999C33.1338 23.0929 33.4166 23.4685 33.5863 23.8253C34.0577 24.7642 34.7553 25.2712 35.7168 25.4214C37.4703 25.6843 39.2049 24.689 39.2049 23.4309C39.2049 22.5296 38.3942 21.8536 35.6226 20.4265C32.9075 19.0369 31.3238 17.8539 30.777 16.7835C30.6073 16.4643 30.4753 15.7695 30.4753 15.2438C30.4753 13.2908 31.7763 11.7135 33.888 11.1126L34.8684 10.8309V9.98594C34.8684 9.06582 35.3398 8.40859 35.9997 8.40859C36.2071 8.40859 36.5464 8.57759 36.7538 8.78415Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M4.51261 20.5953C3.68301 20.8582 2.92883 21.4967 2.58945 22.1914C2.3632 22.6609 1.9484 26.1724 1.06224 34.829C-0.29528 47.936 -0.29528 47.8233 0.741716 49.5696C1.02453 50.0579 3.17394 52.5178 5.53075 55.034C10.3198 60.1416 10.81 60.7237 11.4322 61.9255C12.3372 63.7094 12.6577 65.1929 12.6577 67.6715V70H20.7652H28.8726V63.8408C28.8537 53.7947 28.9669 54.0951 23.4991 48.1988C16.0893 40.237 16.0327 40.1807 15.2785 39.8802C12.7143 38.8474 9.96155 40.575 9.9427 43.2227C9.92385 44.9127 10.2632 45.3822 14.958 49.9076C17.3337 52.2173 19.3888 54.3017 19.4831 54.527C19.7847 55.1842 19.238 55.9166 18.4461 55.9166C17.9181 55.9166 17.3148 55.3908 13.0914 51.2596C8.71716 46.9783 8.32121 46.5464 7.96298 45.5324C6.96369 42.7533 8.09496 39.4483 10.4895 38.1714C11.0928 37.8334 11.1682 37.7395 11.074 37.2325C11.0174 36.9133 10.4895 33.6272 9.92385 29.9092C9.24508 25.4588 8.75487 22.8862 8.50976 22.3604C7.86871 20.9897 5.94555 20.1446 4.51261 20.5953Z"
+                        fill="#7AC943"
+                      />
+                      <path
+                        class="transition-all duration-300 ease-in-out group-hover:fill-custom-white"
+                        d="M65.5077 20.6141C64.6593 20.877 63.7731 21.6469 63.4337 22.4356C63.264 22.8299 62.6418 26.2287 62.0573 30.0031C61.4917 33.7774 60.9638 37.0635 60.9072 37.3264C60.8318 37.7208 60.9449 37.8522 61.5106 38.1714C63.9051 39.4296 65.0363 42.7533 64.0371 45.5324C63.6788 46.5464 63.2829 46.9783 58.9086 51.2596C54.6852 55.4096 54.0819 55.9166 53.554 55.9166C52.8375 55.9166 52.253 55.2406 52.4604 54.6209C52.517 54.4143 54.6287 52.2361 57.1552 49.7762C61.454 45.5887 61.7557 45.2507 61.9631 44.3869C62.5664 41.8895 60.8318 39.5798 58.343 39.5798C56.8346 39.5798 56.137 39.9929 54.1196 42.1711C45.0695 51.8793 44.7866 52.2173 44.1267 53.5693C43.2594 55.3908 43.1274 56.8179 43.1274 64.0286V70H51.2349H59.3423V67.6715C59.3423 65.6811 59.4177 65.099 59.8137 63.8221C60.5113 61.6251 61.5106 60.2918 66.4127 55.0903C68.8072 52.5365 70.9755 50.0579 71.2583 49.5696C72.2953 47.8045 72.2953 47.9547 70.9378 34.829C70.0516 26.0409 69.6368 22.6609 69.4106 22.1914C68.8072 20.9333 66.9029 20.1634 65.5077 20.6141Z"
+                        fill="#7AC943"
+                      />
+                    </svg>
+                  </div>
+                  <h2
+                    class="text-[clamp(16px,2vw,24px)] font-semibold text-center mt-4 leading-121 text-custom-black group-hover:text-custom-white transition-all duration-300 ease-in-out"
+                  >
+                    Not a Broker. Never Will Be.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg width="0" height="0" style="position: absolute">
+        <symbol id="arrow" viewBox="0 0 40 40">
+          <path
+            d="M8 20h24M22 10l10 10-10 10"
+            fill="none"
+            stroke="#2b2b2b"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </symbol>
+      </svg>
+
+      <section class="testimonials">
+        <div class="intro" data-aos="fade-right">
+          <h2>Backed by Real Stories</h2>
+          <div class="arrows">
+            <button class="arrow prev" aria-label="Previous">
+              <svg><use href="#arrow" /></svg>
+            </button>
+            <button class="arrow next" aria-label="Next">
+              <svg><use href="#arrow" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper" data-aos="fade-left" data-aos-delay="150">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-scroll">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  class="stars"
+                  src="assets/img/svg/5-star.svg"
+                  alt="5 stars"
+                />
+                <p class="quote">
+                  Rabbit came through when our bank didn’t understand what we
+                  needed. We secured $185,000 in 3 days to remodel our
+                  locations.
+                </p>
+                <div class="author">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/img/svg/user-1.svg"
+                    alt="Mario S."
+                  />
+                  <div>
+                    <strong>Mario S.</strong
+                    ><span>Burger King Franchise, Tampa, FL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-scroll">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  class="stars"
+                  src="assets/img/svg/5-star.svg"
+                  alt="5 stars"
+                />
+                <p class="quote">
+                  The team took time to hear our story and funded us $92K when
+                  others said no. That capital saved our expansion.
+                </p>
+                <div class="author">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/img/svg/user-2.svg"
+                    alt="Ashley R."
+                  />
+                  <div>
+                    <strong>Ashley R.</strong
+                    ><span>Firehouse Subs, Denver, CO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-scroll">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  class="stars"
+                  src="assets/img/svg/5-star.svg"
+                  alt="5 stars"
+                />
+                <p class="quote">
+                  Another lender screwed me and reported me as defaulted. Rabbit
+                  didn’t care. They listened &amp; gave me a short-term deal so
+                  I could breathe while they worked the real play. Four weeks
+                  later. They closed the Line of credit, I paid them off early
+                  with the massive discount, and now have a 5-year line at 13%
+                  for 200k . I didn’t think that was even possible.
+                </p>
+                <div class="author">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/img/svg/user-3.svg"
+                    alt="Tyler G."
+                  />
+                  <div>
+                    <strong>Tyler G.</strong
+                    ><span>Tyler’s Transport &amp; Hauling, Phoenix, AZ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-scroll">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  class="stars"
+                  src="assets/img/svg/5-star.svg"
+                  alt="5 stars"
+                />
+                <p class="quote">
+                  Every holiday season, my costs spike. Rabbit’s been my go-to
+                  for four years — no re-explaining, no games. Just better rates
+                  and terms, year after year.
+                </p>
+                <div class="author">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/img/svg/user-4.svg"
+                    alt="Monica L."
+                  />
+                  <div>
+                    <strong>Monica L.</strong
+                    ><span>Mona’s Custom Gift Boxes, Staten Island, NY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-scroll">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  class="stars"
+                  src="assets/img/svg/5-star.svg"
+                  alt="5 stars"
+                />
+                <p class="quote">
+                  Rabbit called offering a LOC, and I thought it was bullshit
+                  until Greg started asking questions no one has asked before.
+                  After 45 minutes on that call, I knew these guys were
+                  different. They underwrote my last 2 years of business and
+                  personal tax returns in advance. They worked me through their
+                  credit division to get my scores up, but they already knew
+                  what I would qualify for way before then. They took my scores
+                  from a 608 to a 662 and got me approved.
+                </p>
+                <div class="author">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="assets/img/svg/user-5.svg"
+                    alt="Daniel R."
+                  />
+                  <div>
+                    <strong>Daniel R.</strong
+                    ><span>Reyes Auto Performance, San Antonio, TX</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="min-h-fit px-4 bg-green-gradient">
+        <div class="container max-w-285 w-full mx-auto">
+          <div
+            class="row flex items-center flex-col w-full justify-center py-15 md:py-20 lg:py-25"
+          >
+            <h2
+              class="text-[clamp(28px,5vw,48px)] font-bold text-center text-custom-black leading-121"
+              data-aos="fade-up"
+            >
+              Trusted By
+            </h2>
+
+            <div
+              class="logo-container mt-[clamp(30px,5vw,60px)] grid grid-cols-2 custom-sm:grid-cols-3 md:grid-cols-4 gap-3.5 sm:gap-6"
+              id="logo-container"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="max-w-293 px-4 w-full mx-auto relative -mb-25 pt-0 md:pt-15 lg:pt-42.5"
+      >
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          class="part min-h-fit rounded-24 bg-[url('/assets/img/webp/cta.webp')] bg-center bg-cover bg-no-repeat items-center flex justify-center"
+        >
+          <div
+            class="content max-w-142 w-full items-center flex justify-center flex-col py-10 px-2.5"
+          >
+            <h2
+              class="text-custom-white text-center leading-121 font-bold text-[clamp(28px,5vw,48px)]"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              We Don’t Hop Around. We Fund.
+            </h2>
+            <p
+              class="max-w-85 w-full text-base leading-150 text-custom-white text-center font-semibold mt-2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <span class="font-normal leading-150"
+                >Funding built for speed — not scorecards.</span
+              >
+              No banks. No brokers. Just Rabbit.
+            </p>
+            <button
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="pulse-ring group relative cursor-pointer isolate max-w-67.5 w-full h-12.5 sm:h-15 flex items-center justify-center bg-dark-green border-2 border-transparent hover:border-custom-white rounded-full mt-4 gap-1.5 overflow-hidden"
+            >
+              <span
+                class="absolute inset-0 -z-10 bg-custom-green scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+              ></span>
+
+              <span
+                class="relative z-10 text-custom-white text-base leading-121 font-semibold transition-colors duration-300"
+              >
+                Let’s Get You Funded
+              </span>
+
+              <span
+                class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4036_265)">
+                    <path
+                      d="M15 10.4101L6.393 19.0171L4.979 17.6031L13.586 8.99609H6V6.99609H17V17.9961H15V10.4111V10.4101Z"
+                      class="fill-custom-white transition-colors duration-300"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4036_265">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="custom-white"
+                        transform="matrix(-1 0 0 -1 24 24)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="min-h-fit bg-accent-gray">
+      <div class="mx-auto px-4 w-full max-w-257">
+        <div
+          class="footer-content pt-37.5 sm:pt-50 w-full flex flex-col items-center justify-center"
+        >
+          <div class="logo">
+            <a href="#">
+              <img
+                width="298"
+                height="136"
+                class="object-contain max-w-74.5 w-full h-20 md:h-26 lg:h-34"
+                src="assets/img/svg/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+
+          <div
+            class="footer-items mt-[clamp(30px,5vw,60px)] w-full flex gap-8 992:gap-25 flex-wrap 992:flex-nowrap justify-between"
+          >
+            <div class="max-w-47.5 w-full">
+              <h2 class="text-custom-gray text-base font-semibold leading-121">
+                Rated 4.9 on trustpilot.
+              </h2>
+              <img
+                loading="lazy"
+                decoding="async"
+                class="object-cover max-w-42.75 w-full h-auto mt-3"
+                src="assets/img/svg/trustpilot.svg"
+                alt="trustpilot rating"
+              />
+            </div>
+            <div class="flex gap-6 flex-wrap md:flex-nowrap md:gap-25 w-full">
+              <div class="max-w-26.75 w-full flex flex-col gap-3">
+                <h2
+                  class="leading-121 text-custom-gray font-semibold text-base"
+                >
+                  Quick Links
+                </h2>
+                <div class="flex flex-col gap-3">
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Home</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Programs</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >How It Works</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >About</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Testimonials</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-38.75 w-full flex flex-col gap-3">
+                <h2
+                  class="leading-121 text-custom-gray font-semibold text-base"
+                >
+                  Legal
+                </h2>
+                <div class="flex flex-col gap-3">
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Terms & Conditions</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Privacy Policy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-61.75 w-full flex flex-col gap-3">
+                <h2
+                  class="leading-121 text-custom-gray font-semibold text-base"
+                >
+                  Contact
+                </h2>
+                <div class="flex flex-col gap-3">
+                  <div class="link flex gap-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_107_7865)">
+                        <path
+                          d="M21 16.42V19.956C21.0001 20.2092 20.9042 20.453 20.7316 20.6382C20.559 20.8234 20.3226 20.9363 20.07 20.954C19.633 20.984 19.276 21 19 21C10.163 21 3 13.837 3 5C3 4.724 3.015 4.367 3.046 3.93C3.06372 3.67744 3.17658 3.44101 3.3618 3.26841C3.54703 3.09581 3.79082 2.99989 4.044 3H7.58C7.70404 2.99987 7.8237 3.04586 7.91573 3.12902C8.00776 3.21218 8.0656 3.32658 8.078 3.45C8.101 3.68 8.122 3.863 8.142 4.002C8.34073 5.38892 8.748 6.73783 9.35 8.003C9.445 8.203 9.383 8.442 9.203 8.57L7.045 10.112C8.36445 13.1865 10.8145 15.6365 13.889 16.956L15.429 14.802C15.4919 14.714 15.5838 14.6509 15.6885 14.6237C15.7932 14.5964 15.9042 14.6068 16.002 14.653C17.267 15.2539 18.6156 15.6601 20.002 15.858C20.141 15.878 20.324 15.9 20.552 15.922C20.6752 15.9346 20.7894 15.9926 20.8724 16.0846C20.9553 16.1766 21.0012 16.2961 21.001 16.42H21Z"
+                          fill="#4E4E4E"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_107_7865">
+                          <rect width="24" height="24" fill="custom-white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="tel:520-702-5510"
+                      >520-702-5510</a
+                    >
+                  </div>
+                  <div class="link flex gap-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_107_7868)">
+                        <path
+                          d="M3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3ZM12.06 11.683L5.648 6.238L4.353 7.762L12.073 14.317L19.654 7.757L18.346 6.244L12.061 11.683H12.06Z"
+                          fill="#4E4E4E"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_107_7868">
+                          <rect width="24" height="24" fill="custom-white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <a
+                      class="text-base text-nowrap font-normal relative leading-150 text-custom-gray underline"
+                      href="mailto:Admin@rabbitfunding.io"
+                      >Admin@rabbitfunding.io</a
+                    >
+                  </div>
+                  <div class="link flex gap-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_107_7871)">
+                        <path
+                          d="M18.364 17.3639L12 23.7279L5.636 17.3639C4.37734 16.1052 3.52019 14.5016 3.17293 12.7558C2.82567 11.0099 3.00391 9.20035 3.6851 7.55582C4.36629 5.91129 5.51984 4.50569 6.99988 3.51677C8.47992 2.52784 10.22 2 12 2C13.78 2 15.5201 2.52784 17.0001 3.51677C18.4802 4.50569 19.6337 5.91129 20.3149 7.55582C20.9961 9.20035 21.1743 11.0099 20.8271 12.7558C20.4798 14.5016 19.6227 16.1052 18.364 17.3639ZM12 14.9999C13.0609 14.9999 14.0783 14.5785 14.8284 13.8283C15.5786 13.0782 16 12.0608 16 10.9999C16 9.93906 15.5786 8.92164 14.8284 8.17149C14.0783 7.42135 13.0609 6.99992 12 6.99992C10.9391 6.99992 9.92172 7.42135 9.17158 8.17149C8.42143 8.92164 8 9.93906 8 10.9999C8 12.0608 8.42143 13.0782 9.17158 13.8283C9.92172 14.5785 10.9391 14.9999 12 14.9999ZM12 12.9999C11.4696 12.9999 10.9609 12.7892 10.5858 12.4141C10.2107 12.0391 10 11.5304 10 10.9999C10 10.4695 10.2107 9.96078 10.5858 9.58571C10.9609 9.21064 11.4696 8.99992 12 8.99992C12.5304 8.99992 13.0391 9.21064 13.4142 9.58571C13.7893 9.96078 14 10.4695 14 10.9999C14 11.5304 13.7893 12.0391 13.4142 12.4141C13.0391 12.7892 12.5304 12.9999 12 12.9999Z"
+                          fill="#4E4E4E"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_107_7871">
+                          <rect width="24" height="24" fill="custom-white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="https://maps.app.goo.gl/7psN183Fvypj5fQa6"
+                      target="_blank"
+                      >28 Liberty St, NY, NY, 10005</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-[clamp(30px,5vw,60px)] border-t border-solid border-border-gray h-14 w-full py-4"
+      >
+        <h2
+          class="text-center text-base font-normal leading-150 text-custom-gray"
+        >
+          © <span id="year"></span> Rabbit Funding, LLC. All rights reserved.
+        </h2>
+      </div>
+    </footer>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>
