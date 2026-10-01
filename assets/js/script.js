@@ -6,15 +6,47 @@ const overlay = document.getElementById("overlay");
 const sidebarList = document.getElementById("sidebarList");
 const bars = menuBtn.querySelectorAll(".bar");
 
-const linkClasses =
-  "block w-full py-4 border-b border-gray-100 font-normal text-base leading-100 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor] transition-colors";
+const sidebarBase =
+  "block w-full py-4 border-b border-gray-100 text-base leading-100 transition-colors";
+const sidebarInactive = `${sidebarBase} font-normal text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]`;
+const sidebarActive = `${sidebarBase} font-semibold text-custom-black`;
 
-const desktopLinks = document.querySelectorAll("#navLinks .middle-item a");
+const desktopLinks = document.querySelectorAll("#navLinks .nav-link");
+
+
+function normalize(path) {
+  return path.replace(/\/index\.html$/, "/").replace(/\.html$/, "") || "/";
+}
+
+function isCurrentPage(link) {
+  const raw = link.getAttribute("href");
+  if (!raw || raw.includes("#")) return false; 
+  const url = new URL(raw, location.href);
+  return normalize(url.pathname) === normalize(location.pathname);
+}
 
 desktopLinks.forEach(function (link) {
+  if (isCurrentPage(link)) {
+    link.classList.remove(
+      "font-normal",
+      "leading-150",
+      "text-custom-gray",
+      "hover:text-custom-black",
+      "hover:[-webkit-text-stroke:1.2px_currentColor]"
+    );
+    link.classList.add("font-semibold", "leading-100", "text-custom-black");
+    link.setAttribute("aria-current", "page");
+  }
+});
+
+
+desktopLinks.forEach(function (link) {
+  const active = link.getAttribute("aria-current") === "page";
   sidebarList.innerHTML += `
     <li>
-      <a href="${link.getAttribute("href")}" class="${linkClasses}">
+      <a href="${link.getAttribute("href")}"
+         class="${active ? sidebarActive : sidebarInactive}"
+         ${active ? 'aria-current="page"' : ""}>
         ${link.textContent.trim()}
       </a>
     </li>
@@ -29,6 +61,7 @@ sidebarList.innerHTML += `
     </button>
   </li>
 `;
+
 
 function openMenu() {
   sidebar.classList.remove("translate-x-full");
@@ -91,6 +124,7 @@ window.addEventListener("resize", function () {
     closeMenu();
   }
 });
+
 
 // 6 CARDS TOP
 
@@ -332,6 +366,8 @@ LogoContainer.innerHTML = LogoData.map(
 const yearElement = document.getElementById("year");
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;
+
+// AOS
 
 AOS.init({
   duration: 700,
