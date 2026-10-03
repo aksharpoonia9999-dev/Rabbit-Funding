@@ -167,6 +167,7 @@ body {
   font-size: 48px;
   line-height: 121%;
   font-weight: 700;
+  color: var(--color-custom-black);
 }
 .arrows {
   display: flex;
@@ -229,6 +230,7 @@ body {
   flex: 1;
   margin: 0;
   line-height: 150%;
+  color: var(--color-custom-black);
 }
 .author {
   display: flex;
@@ -247,10 +249,16 @@ body {
   display: block;
   font-weight: 600;
   line-height: 1.22;
+  color: var(--color-custom-black);
 }
 .author span {
   font-size: 14px;
   line-height: 150%;
+  color: var(--color-custom-black);
+}
+.arrow.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: default;
 }
 
 @media (max-width: 991px) {

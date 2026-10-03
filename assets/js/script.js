@@ -13,14 +13,13 @@ const sidebarActive = `${sidebarBase} font-semibold text-custom-black`;
 
 const desktopLinks = document.querySelectorAll("#navLinks .nav-link");
 
-
 function normalize(path) {
   return path.replace(/\/index\.html$/, "/").replace(/\.html$/, "") || "/";
 }
 
 function isCurrentPage(link) {
   const raw = link.getAttribute("href");
-  if (!raw || raw.includes("#")) return false; 
+  if (!raw || raw.includes("#")) return false;
   const url = new URL(raw, location.href);
   return normalize(url.pathname) === normalize(location.pathname);
 }
@@ -32,13 +31,12 @@ desktopLinks.forEach(function (link) {
       "leading-150",
       "text-custom-gray",
       "hover:text-custom-black",
-      "hover:[-webkit-text-stroke:1.2px_currentColor]"
+      "hover:[-webkit-text-stroke:1.2px_currentColor]",
     );
     link.classList.add("font-semibold", "leading-100", "text-custom-black");
     link.setAttribute("aria-current", "page");
   }
 });
-
 
 desktopLinks.forEach(function (link) {
   const active = link.getAttribute("aria-current") === "page";
@@ -62,7 +60,6 @@ sidebarList.innerHTML += `
   </li>
 `;
 
-
 function openMenu() {
   sidebar.classList.remove("translate-x-full");
   sidebar.classList.add("translate-x-0");
@@ -73,6 +70,7 @@ function openMenu() {
   overlay.classList.remove("opacity-0", "pointer-events-none");
   overlay.classList.add("opacity-100");
 
+  document.documentElement.classList.add("overflow-hidden");
   document.body.classList.add("overflow-hidden");
 
   bars[0].classList.add("translate-y-[9px]", "rotate-45");
@@ -90,6 +88,7 @@ function closeMenu() {
   overlay.classList.add("opacity-0", "pointer-events-none");
   overlay.classList.remove("opacity-100");
 
+  document.documentElement.classList.remove("overflow-hidden");
   document.body.classList.remove("overflow-hidden");
 
   bars[0].classList.remove("translate-y-[9px]", "rotate-45");
@@ -125,7 +124,6 @@ window.addEventListener("resize", function () {
   }
 });
 
-
 // 6 CARDS TOP
 
 const cardsContainer = document.getElementById("card-container-1");
@@ -135,37 +133,37 @@ const CardData = [
     svg: "assets/img/svg/money.svg",
     title: "320M+ Funded — All From Our Own Capital",
     width: "76",
-    height: "45"
+    height: "45",
   },
   {
     svg: "assets/img/svg/people.svg",
     title: "12000+ Founders Funded Nationwide",
     width: "66",
-    height: "56"
+    height: "56",
   },
   {
     svg: "assets/img/svg/arrow.svg",
     title: "74% Come Back for Round Two",
     width: "43",
-    height: "51"
+    height: "51",
   },
   {
     svg: "assets/img/svg/star.svg",
     title: "4.9 Average <br> on Trustpilot",
     width: "55",
-    height: "46"
+    height: "46",
   },
   {
     svg: "assets/img/svg/rabbit.svg",
     title: "Direct Lender <br> - No Brokers",
     width: "83",
-    height: "51"
+    height: "51",
   },
   {
     svg: "assets/img/svg/unlock.svg",
     title: "No Hard Credit <br> Pulls. Ever.",
     width: "42",
-    height: "54"
+    height: "54",
   },
 ];
 
@@ -284,9 +282,8 @@ setInterval(tick, 500);
 // SWIPER
 
 new Swiper(".testimonials .swiper", {
-  loop: true,
-  loopAdditionalSlides: 3,
-  speed: 1000,
+  loop: false,
+  speed: 300,
   grabCursor: true,
   navigation: { prevEl: ".arrow.prev", nextEl: ".arrow.next" },
   slidesPerView: "auto",
@@ -299,7 +296,7 @@ new Swiper(".testimonials .swiper", {
 document.querySelectorAll(".arrow").forEach((btn) => {
   btn.addEventListener("click", () => {
     btn.classList.add("clicked");
-    setTimeout(() => btn.classList.remove("clicked"), 500);
+    setTimeout(() => btn.classList.remove("clicked"), 400);
   });
 });
 

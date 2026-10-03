@@ -70,6 +70,7 @@ function openMenu() {
   overlay.classList.remove("opacity-0", "pointer-events-none");
   overlay.classList.add("opacity-100");
 
+  document.documentElement.classList.add("overflow-hidden");
   document.body.classList.add("overflow-hidden");
 
   bars[0].classList.add("translate-y-[9px]", "rotate-45");
@@ -87,6 +88,7 @@ function closeMenu() {
   overlay.classList.add("opacity-0", "pointer-events-none");
   overlay.classList.remove("opacity-100");
 
+  document.documentElement.classList.remove("overflow-hidden");
   document.body.classList.remove("overflow-hidden");
 
   bars[0].classList.remove("translate-y-[9px]", "rotate-45");
