@@ -2,6 +2,7 @@
 
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
 
   --leading-100: 100%;
   --leading-119: 119%;
@@ -9,6 +10,7 @@
   --leading-121: 121%;
   --leading-122: 122%;
   --leading-124: 124%;
+  --leading-125: 125%;
   --leading-150: 150%;
   --leading-160: 160%;
 
