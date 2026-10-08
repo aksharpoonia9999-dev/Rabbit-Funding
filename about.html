@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rabbit Funding provides flexible business financing solutions to help businesses access the funding they need to grow and succeed."
+    />
+    <title>𝚁𝚊𝚋𝚋𝚒𝚝 𝙵𝚞𝚗𝚍𝚒𝚗𝚐</title>
+    <link rel="icon" href="assets/img/svg/rabbit.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      />
+    </noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <noscript>
+      <style>
+        [data-aos] {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body class="font-montserrat bg-custom-white">
+    <main>
+      <section class="min-h-fit bg-green-gradient px-4">
+        <header class="h-20 md:h-25 items-center flex">
+          <div class="container max-w-285 mx-auto w-full">
+            <nav class="flex items-center justify-between xl:justify-normal">
+              <div class="right max-w-33 w-full">
+                <div class="logo w-full">
+                  <a href="#">
+                    <img
+                      class="w-full h-12.5 sm:h-auto"
+                      width="132"
+                      height="60"
+                      src="assets/img/svg/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div
+                id="navLinks"
+                class="middle ml-0 xl:ml-[196.5px] hidden 992:flex items-center gap-6"
+              >
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="index.html"
+                    >Home</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="programs.html"
+                    >Programs</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="how-it-works.html"
+                    >How It Works</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="#"
+                    >Testimonials</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="about.html"
+                    >About</a
+                  >
+                </div>
+              </div>
+
+              <div class="left flex items-center gap-4">
+                <button
+                  id="contactBtn"
+                  class="group ml-0 xl:ml-[172.5px] xs:px-8 btn hidden 992:block max-w-38.75 w-full h-14 px-5 border-2 border-solid border-custom-black rounded-full cursor-pointer overflow-hidden relative transition-all hover:border-custom-green"
+                >
+                  <span
+                    class="relative z-10 text-custom-black group-hover:text-custom-white font-semibold text-base text-nowrap leading-100 transition-colors duration-300"
+                    >Contact Us</span
+                  >
+                  <span
+                    class="absolute inset-0 bg-custom-green scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                  ></span>
+                </button>
+
+                <button
+                  id="menuBtn"
+                  type="button"
+                  aria-label="Toggle menu"
+                  aria-expanded="false"
+                  aria-controls="sidebar"
+                  class="992:hidden relative z-60 w-10 h-10 flex flex-col items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
+                  ></span>
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300"
+                  ></span>
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
+                  ></span>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <div
+          id="overlay"
+          class="fixed inset-0 z-40 bg-black/30 opacity-0 pointer-events-none transition-opacity duration-300 992:hidden"
+        ></div>
+
+        <aside
+          id="sidebar"
+          aria-hidden="true"
+          inert
+          class="fixed top-0 right-0 z-50 h-full w-[60%] bg-custom-white shadow-[-8px_0_30px_rgba(0,0,0,0.15)] translate-x-full transition-transform duration-500 ease-out pt-27.5 px-6 pb-8 overflow-y-auto 992:hidden"
+        >
+          <ul id="sidebarList" class="flex flex-col gap-2"></ul>
+        </aside>
+
+        <!-- nav ending -->
+
+        <div class="container max-w-285 w-full mx-auto">
+          <div
+            class="row w-full flex gap-[clamp(32px,3.54vw,51px)] items-center justify-center flex-col 992:flex-row pt-8.25 pb-10 sm:pb-15 md:pb-20 lg:pb-42.5"
+          >
+            <div
+              class="left max-w-129.5 w-full xl:h-97.5 h-auto flex flex-col items-center 992:items-start"
+            >
+              <h1
+                class="text-[clamp(28px,4.5vw,52px)] font-bold leading-120 text-custom-black text-center 992:text-left"
+                data-aos="fade-up"
+              >
+                We Built Rabbit for Founders Who Got Told “No.
+              </h1>
+              <p
+                class="text-[clamp(14px,1.39vw,20px)] font-semibold leading-120 max-w-122.5 w-full text-custom-gray mt-3 text-center 992:text-left"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
+                Traditional lenders fund files. We fund people.
+              </p>
+              <p
+                class="text-sm xs:text-base max-w-105.75 w-full text-custom-gray leading-150 mt-3 text-center 992:text-left"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                We read between the lines. We ask questions banks never bother
+                with. Because we don’t just approve numbers — we approve
+                momentum.
+              </p>
+              <button
+                class="yes-btn mt-[clamp(16px,1.67vw,24px)] group relative isolate cursor-pointer w-47 text-nowrap h-12.5 sm:h-15 rounded-full bg-custom-green border-2 border-custom-green px-5 sm:px-8 flex items-center justify-center gap-1.5 overflow-hidden"
+                data-aos="fade-up"
+                data-aos-delay="450"
+              >
+                <span
+                  class="absolute inset-0 z-0 bg-custom-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                ></span>
+
+                <span
+                  class="relative z-10 text-custom-white font-semibold text-base leading-100 transition-colors duration-300 group-hover:text-custom-green"
+                >
+                  Be Told Yes
+                </span>
+
+                <span
+                  class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 10.41L6.393 19.017L4.979 17.603L13.586 8.996H6V6.996H17V17.996H15V10.411V10.41Z"
+                      class="fill-custom-white transition-colors duration-300 group-hover:fill-custom-green"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div
+              class="right max-w-141 w-full xl:h-99 h-auto"
+              data-aos="fade-left"
+              data-aos-duration="1100"
+              data-aos-delay="200"
+            >
+              <img
+                width="564"
+                height="396"
+                class="object-cover xl:h-99 anim-float"
+                src="assets/img/about-images/webp/man-plants.webp"
+                alt="man-plants"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="min-h-fit px-4 bg-accent-gray">
+        <div class="container max-w-285 w-full mx-auto">
+          <div class="row w-full">
+            <div
+              class="content lg:py-30 md:py-20 sm:py-15 py-10 flex items-center justify-center gap-7.5 xs:gap-10 992:gap-[clamp(40px,13.89vw,200px)] flex-col 992:flex-row"
+            >
+              <div
+                class="left max-w-112.5 w-full xl:h-91.75 h-auto"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <img
+                  width="450"
+                  height="367"
+                  class="object-cover xl:h-91.75 h-auto anim-wipe"
+                  src="assets/img/about-images/webp/man-women-files.webp"
+                  alt="man-women-files"
+                />
+              </div>
+              <div class="right max-w-122.25 w-full xl:h-91.5">
+                <h1
+                  class="text-[clamp(28px,2.78vw,40px)] font-semibold leading-120 text-custom-black text-center 992:text-left"
+                  data-aos="fade-left"
+                >
+                  Where We Started
+                </h1>
+
+                <div
+                  class="rounded-12 bg-custom-white w-full max-w-122.25 xl:h-66 mt-[clamp(16px,1.67vw,24px)]"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <div class="content p-[clamp(16px,1.39vw,20px)]">
+                    <p
+                      class="text-[clamp(16px,1.39vw,20px)] text-custom-gray leading-160 font-normal"
+                    >
+                      <span class="font-semibold"
+                        >We started Rabbit because we were tired of hearing “You
+                        don’t qualify.” </span
+                      ><br />
+                      We’d built businesses. We knew what working capital could
+                      unlock — and we got rejected anyway. So we stopped asking
+                      for permission and built our own system. One that funds on
+                      context, not just credit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="min-h-fit px-4">
+        <div class="container max-w-285 w-full mx-auto">
+          <div
+            class="row w-full flex items-center justify-center flex-col lg:py-42.5 md:py-20 sm:py-15 py-10"
+          >
+            <h1
+              class="max-w-153 w-full text-center font-bold leading-121 text-[clamp(28px,5vw,48px)] text-custom-black"
+              data-aos="fade-up"
+            >
+              This Isn’t a Tagline. It’s the Track Record.
+            </h1>
+
+            <div
+              class="card-container max-w-285 w-full mt-[clamp(30px,5vw,60px)] flex gap-6 justify-center flex-wrap 992:flex-nowrap"
+            >
+              <div
+                class="card cursor-pointer max-w-91 w-full xl:h-84 shadow-gridcard rounded-24 bg-custom-white group relative isolate overflow-hidden"
+                data-aos="hop-in"
+              >
+                <div
+                  class="absolute inset-0 z-0 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[linear-gradient(147.33deg,#7ac943_51.48%,#4caf50_110.78%)]"
+                ></div>
+
+                <div
+                  class="card-content relative z-10 flex flex-col gap-[clamp(16px,1.67vw,24px)] p-[clamp(16px,1.67vw,24px)]"
+                >
+                  <div
+                    class="svg-circle size-[clamp(64px,6.67vw,96px)] items-center justify-center flex group-hover:bg-muted-gray bg-accent-gray rounded-full transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                  >
+                    <svg
+                      class="size-[clamp(28px,2.71vw,39px)]"
+                      width="39"
+                      height="39"
+                      viewBox="0 0 39 39"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="group-hover:fill-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                        d="M8.66667 39V34.6667H17.3333V27.95C15.5639 27.5528 13.9844 26.8038 12.5948 25.7032C11.2053 24.6025 10.1848 23.2209 9.53333 21.5583C6.825 21.2333 4.55939 20.0511 2.7365 18.0115C0.913611 15.9719 0.00144444 13.5792 0 10.8333V8.66667C0 7.475 0.424667 6.45522 1.274 5.60733C2.12333 4.75944 3.14311 4.33478 4.33333 4.33333H8.66667V0H30.3333V4.33333H34.6667C35.8583 4.33333 36.8788 4.758 37.7282 5.60733C38.5775 6.45667 39.0014 7.47644 39 8.66667V10.8333C39 13.5778 38.0878 15.9705 36.2635 18.0115C34.4392 20.0525 32.1736 21.2348 29.4667 21.5583C28.8167 23.2194 27.7969 24.6011 26.4073 25.7032C25.0178 26.8053 23.4376 27.5542 21.6667 27.95V34.6667H30.3333V39H8.66667ZM8.66667 16.9V8.66667H4.33333V10.8333C4.33333 12.2056 4.73056 13.4427 5.525 14.5448C6.31944 15.6469 7.36667 16.432 8.66667 16.9ZM30.3333 16.9C31.6333 16.4306 32.6806 15.6448 33.475 14.5427C34.2694 13.4406 34.6667 12.2041 34.6667 10.8333V8.66667H30.3333V16.9Z"
+                        fill="#2B2B2B"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <h1
+                      class="text-[clamp(20px,1.94vw,28px)] font-semibold text-custom-black leading-122 group-hover:text-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                    >
+                      Numbers and Money Follow. They Do Not Lead.
+                    </h1>
+
+                    <p
+                      class="xs:text-base text-sm leading-150 font-normal text-custom-gray group-hover:text-custom-white transition-all duration-300 ease-in-out"
+                    >
+                      Make the right decision. Even if it doesn’t boost revenue
+                      right now.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card cursor-pointer max-w-91 w-full xl:h-84 shadow-gridcard rounded-24 bg-custom-white group relative isolate overflow-hidden"
+                data-aos="hop-in"
+                data-aos-delay="150"
+              >
+                <div
+                  class="absolute inset-0 z-0 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[linear-gradient(147.33deg,#7ac943_51.48%,#4caf50_110.78%)]"
+                ></div>
+
+                <div
+                  class="card-content relative z-10 flex flex-col gap-[clamp(16px,1.67vw,24px)] p-[clamp(16px,1.67vw,24px)]"
+                >
+                  <div
+                    class="svg-circle size-[clamp(64px,6.67vw,96px)] items-center justify-center flex group-hover:bg-muted-gray bg-accent-gray rounded-full transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                  >
+                    <svg
+                      class="size-[clamp(28px,2.71vw,39px)]"
+                      width="40"
+                      height="39"
+                      viewBox="0 0 40 39"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        class="group-hover:fill-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                        d="M31.4459 0.998906C31.084 1.56897 30.5886 2.35482 30.3452 2.74516L29.9023 3.45508L27.9194 3.96259C26.2293 4.39539 25.9096 4.52504 25.7533 4.84112C25.5165 5.32003 25.6077 5.48545 27.0614 7.21496L28.2174 8.59005L28.0832 10.607C27.9613 12.4382 27.9738 12.6514 28.2189 12.9223C28.3674 13.0863 28.612 13.2205 28.7625 13.2205C28.9129 13.2205 29.7885 12.9124 30.708 12.5357C31.6276 12.1591 32.4741 11.8509 32.589 11.8509C32.7039 11.8509 33.547 12.1577 34.4624 12.5327C37.2809 13.6874 37.2985 13.6692 37.0389 9.87261L36.9503 8.57909L38.1799 7.13339C38.8562 6.33826 39.4503 5.52745 39.5001 5.33144C39.6504 4.74023 39.1612 4.44865 37.192 3.95529C36.0064 3.65823 35.2951 3.40151 35.1642 3.22315C35.0533 3.07204 34.5397 2.29791 34.0229 1.50277C33.1898 0.221272 33.0276 0.0517447 32.5936 0.00974336C32.1377 -0.0342364 32.0584 0.034092 31.4459 0.998906ZM4.60197 5.46566C3.21973 5.73913 1.74253 6.75781 0.964739 7.97372C-0.0410118 9.54573 -0.0317287 9.43205 0.0166642 19.7117L0.0603394 28.9779L0.553551 29.9797C1.14766 31.186 2.23635 32.2548 3.45119 32.8242C4.27783 33.2117 4.46957 33.2359 7.28747 33.3082L10.2536 33.3843L10.2084 35.0582C10.1678 36.559 10.1994 36.8028 10.5141 37.415C11.023 38.4049 11.9502 39.0051 12.9628 39C13.4242 38.9977 13.9728 38.882 14.2734 38.7236C14.5577 38.5739 16.3263 37.294 18.2034 35.8797L21.6166 33.3082H25.9945C29.9312 33.3082 30.4588 33.2783 31.2307 33.0129C32.9056 32.4366 33.9442 31.4892 34.7434 29.8081L35.2137 28.8189L35.2601 21.9521L35.3067 15.0854L33.9407 14.5387L32.5749 13.9921L31.079 14.6096C29.26 15.3605 28.3557 15.4265 27.3828 14.8799C26.9858 14.6567 26.5827 14.2534 26.3343 13.8309C25.9609 13.1957 25.9335 13.0308 25.9683 11.6227C25.989 10.7857 26.04 9.92968 26.0814 9.72043C26.1418 9.41501 25.9305 9.07017 25.0086 7.97038C24.2528 7.06902 23.8003 6.37965 23.6846 5.95401L23.5088 5.30724L14.3717 5.32398C9.34614 5.33312 4.94985 5.39688 4.60197 5.46566ZM10.1913 15.4477C9.61778 16.1768 9.94862 17.191 10.8313 17.4093C11.0172 17.4552 14.3428 17.4732 18.2212 17.4491L25.273 17.4055L25.5639 17.0462C25.9676 16.5475 25.9396 15.7883 25.5025 15.3775C25.1508 15.0473 25.1365 15.0467 17.8284 15.0467H10.5067L10.1913 15.4477ZM10.1913 21.687C9.7272 22.277 9.78381 22.8555 10.3524 23.3339L10.829 23.7349L14.8553 23.6899C18.8785 23.6448 18.882 23.6445 19.1725 23.2855C19.5761 22.7868 19.5481 22.0276 19.111 21.6169C18.7672 21.2939 18.6595 21.286 14.6327 21.286H10.5067L10.1913 21.687Z"
+                        fill="#2B2B2B"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <h1
+                      class="text-[clamp(20px,1.94vw,28px)] font-semibold text-custom-black leading-122 group-hover:text-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                    >
+                      Simplicity is Genius
+                    </h1>
+
+                    <p
+                      class="xs:text-base text-sm leading-150 font-normal text-custom-gray group-hover:text-custom-white transition-all duration-300 ease-in-out"
+                    >
+                      If it’s complicated, it’s wrong. Strip it down until it’s
+                      crystal clear.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card cursor-pointer max-w-91 w-full xl:h-84 shadow-gridcard rounded-24 bg-custom-white group relative isolate overflow-hidden"
+                data-aos="hop-in"
+                data-aos-delay="300"
+              >
+                <div
+                  class="absolute inset-0 z-0 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] bg-[linear-gradient(147.33deg,#7ac943_51.48%,#4caf50_110.78%)]"
+                ></div>
+
+                <div
+                  class="card-content relative z-10 flex flex-col gap-[clamp(16px,1.67vw,24px)] p-[clamp(16px,1.67vw,24px)]"
+                >
+                  <div
+                    class="svg-circle size-[clamp(64px,6.67vw,96px)] items-center justify-center flex group-hover:bg-muted-gray bg-accent-gray rounded-full transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                  >
+                    <svg
+                      width="56"
+                      height="33"
+                      viewBox="0 0 56 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-[clamp(40px,3.89vw,56px)] h-[clamp(24px,2.29vw,33px)]"
+                    >
+                      <path
+                        class="group-hover:fill-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                        d="M0.406299 0.402533C0.146283 0.661581 0.000126041 1.01351 0.000126041 1.38054V13.8766C0.000126041 27.955 -0.0237037 27.4446 0.583953 27.777C0.905654 27.9432 9.34136 27.9432 9.66306 27.777C10.2707 27.4446 10.2469 27.955 10.2469 13.8766V1.38054C10.2469 1.01351 10.1007 0.661581 9.84072 0.402533C9.58196 0.144744 9.2316 0 8.86635 0H1.38067C1.01542 0 0.665051 0.144744 0.406299 0.402533ZM6.51754 20.8446C7.43499 21.5924 7.78052 22.4709 7.50647 23.4442C6.89882 25.5928 3.9916 25.937 2.97884 23.9784C2.4665 22.9932 2.58565 22.0317 3.28862 21.2601C3.89628 20.5835 4.32521 20.4054 5.26649 20.441C5.94563 20.4766 6.12435 20.536 6.51754 20.8446Z"
+                        fill="#2B2B2B"
+                      />
+                      <path
+                        class="group-hover:fill-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                        d="M24.6877 0.261151C24.4017 0.47482 17.1337 8.66547 15.5609 10.5647C15.263 10.9209 15.2273 11.0396 15.2869 11.5619C15.3345 12.1435 15.3822 12.2029 16.5737 13.3543C18.4205 15.123 19.612 15.6691 21.6613 15.6691C22.9004 15.6691 24.1158 15.3486 25.057 14.7669C25.3311 14.5889 26.4511 13.568 27.5353 12.4996L27.9573 12.0842C28.8882 11.168 30.2981 10.9439 31.4672 11.5263C32.7447 12.1548 33.822 13.1265 34.5786 14.3326L36.5787 17.5209C40.1889 23.2662 39.9029 22.9576 41.5233 22.8863C42.4408 22.8507 42.548 22.827 42.8816 22.5065C43.1177 22.2789 43.251 21.9651 43.251 21.6373V12.5353C43.251 3.59676 43.2272 2.88453 43.0365 2.65899C42.9293 2.51655 41.9284 1.87554 40.8084 1.23453C39.4812 0.464498 37.9756 0.0551637 36.4412 0.0472017L31.92 0.0237413L25.5311 0.00160173C25.2301 0.000558823 24.936 0.0910816 24.6877 0.261151Z"
+                        fill="#2B2B2B"
+                      />
+                      <path
+                        class="group-hover:fill-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                        d="M46.1593 0.402533C45.8993 0.661581 45.7531 1.01351 45.7531 1.38054V13.8766C45.7531 27.955 45.7293 27.4446 46.3369 27.777C46.6586 27.9432 55.0943 27.9432 55.416 27.777C56.0237 27.4446 55.9999 27.955 55.9999 13.8766V1.38054C55.9999 1.01351 55.8537 0.661581 55.5937 0.402533C55.3349 0.144744 54.9846 0 54.6193 0H47.1337C46.7684 0 46.418 0.144744 46.1593 0.402533ZM52.2705 20.8446C53.188 21.5924 53.5335 22.4709 53.2595 23.4442C52.6518 25.5928 49.7446 25.937 48.7318 23.9784C48.2195 22.9932 48.3386 22.0317 49.0416 21.2601C49.6493 20.5835 50.0782 20.4054 51.0195 20.441C51.6986 20.4766 51.8773 20.536 52.2705 20.8446Z"
+                        fill="#2B2B2B"
+                      />
+                      <path
+                        class="group-hover:fill-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                        d="M13.583 2.5759C13.4877 2.61151 13.2613 2.7777 13.0826 2.94388C12.8699 3.14065 12.749 3.41725 12.749 3.707V20.6649C12.749 22.9081 13.3778 25.1063 14.5639 27.0103L15.3226 28.2281C16.7405 30.4953 18.0511 32.4896 18.2417 32.6676C18.4634 32.8809 18.7591 33 19.0667 33H29.3578C31.2077 33 33.0325 32.5723 34.6897 31.7503L34.9225 31.6349C37.5319 30.3291 37.8059 30.163 40.2723 28.3112C41.7021 27.2428 42.9531 26.2457 43.0604 26.0914C43.1676 25.9489 43.251 25.6996 43.251 25.5572C43.251 25.2842 43.2391 25.2842 41.7259 25.2842C39.9268 25.2842 39.2714 25.1299 38.4374 24.4888C37.9489 24.109 37.3889 23.3018 34.8034 19.1827L32.2895 15.1912C31.9383 14.6335 31.4447 14.1798 30.8596 13.8766C30.3326 13.607 29.6924 13.7036 29.2685 14.1167L28.3574 15.0043C26.9038 16.4288 26.6179 16.6424 25.6051 17.141C24.08 17.8888 23.2221 18.0906 21.6256 18.0906C18.8971 18.0906 17.0383 17.2004 14.6315 14.755C13.1303 13.2356 12.8205 12.6183 12.892 11.3007C12.9158 10.6716 13.0111 10.2205 13.1899 9.85252C13.3447 9.55576 14.7745 7.82266 16.383 5.9946C17.9796 4.16655 19.3022 2.63525 19.3022 2.5759C19.3022 2.48093 13.8571 2.48093 13.583 2.5759Z"
+                        fill="#2B2B2B"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <h1
+                      class="text-[clamp(20px,1.94vw,28px)] font-semibold text-custom-black leading-122 group-hover:text-custom-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+                    >
+                      Yes Before No
+                    </h1>
+
+                    <p
+                      class="xs:text-base text-sm leading-150 font-normal text-custom-gray group-hover:text-custom-white transition-all duration-300 ease-in-out"
+                    >
+                      Always look for the way it can be done — not why it can’t.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="min-h-fit xl:min-h-139.75 w-full bg-green-gradient md:bg-[url('/assets/img/about-images/webp/section-bg.webp')] bg-center bg-cover bg-no-repeat px-4"
+      >
+        <div class="container max-w-157.25 w-full mx-auto">
+          <div
+            class="row w-full py-10 sm:py-15 flex flex-col items-center justify-center"
+          >
+            <h1
+              class="text-center text-[clamp(28px,5vw,48px)] font-bold leading-121 text-custom-black"
+              data-aos="zoom-in-up"
+            >
+              We're Not Just a Logo — We're the Wire
+            </h1>
+            <p
+              class="mt-3 max-w-118.25 w-full text-sm xs:text-lg leading-150 text-custom-gray text-center font-semibold"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              We underwrite it. We fund it. We answer the phone. This is Rabbit,
+              end to end.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <svg
+        width="0"
+        height="0"
+        style="position: absolute"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <defs>
+          <symbol id="icon-arrow" viewBox="0 0 40 40" fill="none">
+            <path
+              d="M26.9535 21.6666L6.66683 21.6666L6.66683 18.3333L26.9535 18.3333L18.0135 9.39329L20.3702 7.03662L33.3335 20L20.3702 32.9633L18.0135 30.6066L26.9535 21.6666Z"
+              fill="#2B2B2B"
+            />
+          </symbol>
+        </defs>
+      </svg>
+
+      <section class="rating-section lg:py-42.5 md:py-20 sm:py-15 py-10">
+        <h2 class="rating-title" data-aos="fade-up">
+          What Founders Are Actually Saying
+        </h2>
+
+        <div class="rating-slider-wrap" data-aos="fade-up" data-aos-delay="150">
+          <div class="swiper rating-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/about-images/svg/rating-card-1.svg"
+                  width="780"
+                  height="304"
+                  alt="rating"
+                  draggable="false"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/about-images/svg/rating-card-2.svg"
+                  width="780"
+                  height="304"
+                  alt="rating"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/about-images/svg/rating-card-3.svg"
+                  width="780"
+                  height="304"
+                  alt="rating"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="rounded-24"
+                  src="assets/img/about-images/svg/rating-card-4.svg"
+                  width="780"
+                  height="304"
+                  alt="rating"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rating-controls" data-aos="fade-up" data-aos-delay="300">
+          <button
+            type="button"
+            class="rating-btn rating-btn--prev rating-prev is-disabled"
+            aria-label="Previous testimonial"
+          >
+            <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+          </button>
+          <button
+            type="button"
+            class="rating-btn rating-next"
+            aria-label="Next testimonial"
+          >
+            <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+          </button>
+        </div>
+      </section>
+
+      <div class="max-w-293 px-4 w-full mx-auto relative -mb-25">
+        <div
+          class="part min-h-fit rounded-24 bg-[url('/assets/img/webp/cta.webp')] bg-center bg-cover bg-no-repeat items-center flex justify-center"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="content max-w-177.25 w-full items-center flex justify-center flex-col py-10 md:py-15 px-2.5"
+          >
+            <h2
+              class="text-custom-white w-full max-w-177.25 xl:w-177.25 text-center leading-121 font-bold text-[clamp(28px,5vw,48px)]"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              Tell us your story. <br />
+              Let’s get you funded.
+            </h2>
+
+            <button
+              class="pulse-ring group relative cursor-pointer isolate w-44.25 h-12.5 sm:h-15 flex items-center justify-center bg-dark-green border-2 border-transparent hover:border-custom-white rounded-full mt-[clamp(20px,5vw,32px)] gap-1.5 overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <span
+                class="absolute inset-0 -z-10 bg-custom-green scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+              ></span>
+
+              <span
+                class="relative z-10 text-custom-white text-base leading-121 font-semibold transition-colors duration-300"
+              >
+                Start Now
+              </span>
+
+              <span
+                class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4036_265)">
+                    <path
+                      d="M15 10.4101L6.393 19.0171L4.979 17.6031L13.586 8.99609H6V6.99609H17V17.9961H15V10.4111V10.4101Z"
+                      class="fill-custom-white transition-colors duration-300"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4036_265">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="custom-white"
+                        transform="matrix(-1 0 0 -1 24 24)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="min-h-fit bg-accent-gray">
+      <div class="mx-auto px-4 w-full max-w-257">
+        <div
+          class="footer-content pt-37.5 sm:pt-50 w-full flex flex-col items-center justify-center"
+        >
+          <div class="logo">
+            <a href="#">
+              <img
+                width="298"
+                height="136"
+                class="object-contain max-w-74.5 w-full h-20 md:h-26 lg:h-34"
+                src="assets/img/svg/logo.svg"
+                alt="logo"
+              />
+            </a>
+          </div>
+
+          <div
+            class="footer-items mt-[clamp(30px,5vw,60px)] w-full flex gap-8 992:gap-25 flex-wrap 992:flex-nowrap justify-between"
+          >
+            <div class="max-w-47.5 w-full">
+              <h2
+                class="text-custom-gray text-base text-nowrap font-semibold leading-121"
+              >
+                Rated 4.9 on trustpilot.
+              </h2>
+              <img
+                loading="lazy"
+                decoding="async"
+                class="object-cover max-w-42.75 w-full h-auto mt-3"
+                src="assets/img/svg/trustpilot.svg"
+                alt="trustpilot rating"
+              />
+            </div>
+            <div class="flex gap-6 flex-wrap md:flex-nowrap md:gap-25 w-full">
+              <div class="max-w-26.75 w-full flex flex-col gap-3">
+                <h2
+                  class="leading-121 text-custom-gray font-semibold text-base"
+                >
+                  Quick Links
+                </h2>
+                <div class="flex flex-col gap-3">
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Home</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Programs</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >How It Works</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >About</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Testimonials</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-38.75 w-full flex flex-col gap-3">
+                <h2
+                  class="leading-121 text-custom-gray font-semibold text-base"
+                >
+                  Legal
+                </h2>
+                <div class="flex flex-col gap-3">
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Terms & Conditions</a
+                    >
+                  </div>
+                  <div class="link">
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="#"
+                      >Privacy Policy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-61.75 w-full flex flex-col gap-3">
+                <h2
+                  class="leading-121 text-custom-gray font-semibold text-base"
+                >
+                  Contact
+                </h2>
+                <div class="flex flex-col gap-3">
+                  <div class="link flex gap-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_107_7865)">
+                        <path
+                          d="M21 16.42V19.956C21.0001 20.2092 20.9042 20.453 20.7316 20.6382C20.559 20.8234 20.3226 20.9363 20.07 20.954C19.633 20.984 19.276 21 19 21C10.163 21 3 13.837 3 5C3 4.724 3.015 4.367 3.046 3.93C3.06372 3.67744 3.17658 3.44101 3.3618 3.26841C3.54703 3.09581 3.79082 2.99989 4.044 3H7.58C7.70404 2.99987 7.8237 3.04586 7.91573 3.12902C8.00776 3.21218 8.0656 3.32658 8.078 3.45C8.101 3.68 8.122 3.863 8.142 4.002C8.34073 5.38892 8.748 6.73783 9.35 8.003C9.445 8.203 9.383 8.442 9.203 8.57L7.045 10.112C8.36445 13.1865 10.8145 15.6365 13.889 16.956L15.429 14.802C15.4919 14.714 15.5838 14.6509 15.6885 14.6237C15.7932 14.5964 15.9042 14.6068 16.002 14.653C17.267 15.2539 18.6156 15.6601 20.002 15.858C20.141 15.878 20.324 15.9 20.552 15.922C20.6752 15.9346 20.7894 15.9926 20.8724 16.0846C20.9553 16.1766 21.0012 16.2961 21.001 16.42H21Z"
+                          fill="#4E4E4E"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_107_7865">
+                          <rect width="24" height="24" fill="custom-white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="tel:520-702-5510"
+                      >520-702-5510</a
+                    >
+                  </div>
+                  <div class="link flex gap-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_107_7868)">
+                        <path
+                          d="M3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3ZM12.06 11.683L5.648 6.238L4.353 7.762L12.073 14.317L19.654 7.757L18.346 6.244L12.061 11.683H12.06Z"
+                          fill="#4E4E4E"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_107_7868">
+                          <rect width="24" height="24" fill="custom-white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <a
+                      class="text-base text-nowrap font-normal relative leading-150 text-custom-gray underline"
+                      href="mailto:Admin@rabbitfunding.io"
+                      >Admin@rabbitfunding.io</a
+                    >
+                  </div>
+                  <div class="link flex gap-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_107_7871)">
+                        <path
+                          d="M18.364 17.3639L12 23.7279L5.636 17.3639C4.37734 16.1052 3.52019 14.5016 3.17293 12.7558C2.82567 11.0099 3.00391 9.20035 3.6851 7.55582C4.36629 5.91129 5.51984 4.50569 6.99988 3.51677C8.47992 2.52784 10.22 2 12 2C13.78 2 15.5201 2.52784 17.0001 3.51677C18.4802 4.50569 19.6337 5.91129 20.3149 7.55582C20.9961 9.20035 21.1743 11.0099 20.8271 12.7558C20.4798 14.5016 19.6227 16.1052 18.364 17.3639ZM12 14.9999C13.0609 14.9999 14.0783 14.5785 14.8284 13.8283C15.5786 13.0782 16 12.0608 16 10.9999C16 9.93906 15.5786 8.92164 14.8284 8.17149C14.0783 7.42135 13.0609 6.99992 12 6.99992C10.9391 6.99992 9.92172 7.42135 9.17158 8.17149C8.42143 8.92164 8 9.93906 8 10.9999C8 12.0608 8.42143 13.0782 9.17158 13.8283C9.92172 14.5785 10.9391 14.9999 12 14.9999ZM12 12.9999C11.4696 12.9999 10.9609 12.7892 10.5858 12.4141C10.2107 12.0391 10 11.5304 10 10.9999C10 10.4695 10.2107 9.96078 10.5858 9.58571C10.9609 9.21064 11.4696 8.99992 12 8.99992C12.5304 8.99992 13.0391 9.21064 13.4142 9.58571C13.7893 9.96078 14 10.4695 14 10.9999C14 11.5304 13.7893 12.0391 13.4142 12.4141C13.0391 12.7892 12.5304 12.9999 12 12.9999Z"
+                          fill="#4E4E4E"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_107_7871">
+                          <rect width="24" height="24" fill="custom-white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <a
+                      class="leading-150 text-custom-gray text-base text-nowrap font-normal relative inline-block h-fit after:absolute after:left-0 after:bottom-0 after:w-full after:h-px after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
+                      href="https://maps.app.goo.gl/7psN183Fvypj5fQa6"
+                      target="_blank"
+                      >28 Liberty St, NY, NY, 10005</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-[clamp(30px,5vw,60px)] border-t border-solid border-border-gray h-14 w-full py-4"
+      >
+        <h2
+          class="text-center text-base font-normal leading-150 text-custom-gray"
+        >
+          © <span id="year"></span> Rabbit Funding, LLC. All rights reserved.
+        </h2>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/about.js"></script>
+  </body>
+</html>

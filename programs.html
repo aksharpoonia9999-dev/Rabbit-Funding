@@ -38,167 +38,274 @@
     <link rel="stylesheet" href="assets/css/programs.css" />
   </head>
   <body class="font-montserrat bg-custom-white">
-    <section
-      class="min-h-fit xl:min-h-265.25 bg-[url('/assets/img/programs-image/webp/hero.webp')] bg-center bg-cover px-4"
-    >
-      <header class="h-20 md:h-25 items-center flex">
-        <div class="container max-w-285 mx-auto w-full">
-          <nav class="flex items-center justify-between xl:justify-normal">
-            <div class="right max-w-33 w-full">
-              <div class="logo w-full">
-                <a href="#">
-                  <img
-                    class="w-full h-12.5 sm:h-auto"
-                    width="132"
-                    height="60"
-                    src="assets/img/svg/logo.svg"
-                    alt="logo"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div
-              id="navLinks"
-              class="middle ml-0 xl:ml-[196.5px] hidden 992:flex items-center gap-6"
-            >
-              <div class="middle-item">
-                <a
-                  class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
-                  href="index.html"
-                  >Home</a
-                >
-              </div>
-              <div class="middle-item">
-                <a
-                  class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
-                  href="programs.html"
-                  >Programs</a
-                >
-              </div>
-              <div class="middle-item">
-                <a
-                  class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
-                  href="how-it-works.html"
-                  >How It Works</a
-                >
-              </div>
-              <div class="middle-item">
-                <a
-                  class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
-                  href="#"
-                  >Testimonials</a
-                >
-              </div>
-              <div class="middle-item">
-                <a
-                  class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
-                  href="#"
-                  >About</a
-                >
-              </div>
-            </div>
-
-            <div class="left flex items-center gap-4">
-              <button
-                id="contactBtn"
-                class="group ml-0 xl:ml-[172.5px] xs:px-8 btn hidden 992:block max-w-38.75 w-full h-14 px-5 border-2 border-solid border-custom-black rounded-full cursor-pointer overflow-hidden relative transition-all hover:border-custom-green"
-              >
-                <span
-                  class="relative z-10 text-custom-black group-hover:text-custom-white font-semibold text-base text-nowrap leading-100 transition-colors duration-300"
-                  >Contact Us</span
-                >
-                <span
-                  class="absolute inset-0 bg-custom-green scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
-                ></span>
-              </button>
-
-              <button
-                id="menuBtn"
-                type="button"
-                aria-label="Toggle menu"
-                aria-expanded="false"
-                aria-controls="sidebar"
-                class="992:hidden relative z-60 w-10 h-10 flex flex-col items-center justify-center gap-1.5 cursor-pointer"
-              >
-                <span
-                  class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
-                ></span>
-                <span
-                  class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300"
-                ></span>
-                <span
-                  class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
-                ></span>
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <div
-        id="overlay"
-        class="fixed inset-0 z-40 bg-black/30 opacity-0 pointer-events-none transition-opacity duration-300 992:hidden"
-      ></div>
-
-      <aside
-        id="sidebar"
-        aria-hidden="true"
-        inert
-        class="fixed top-0 right-0 z-50 h-full w-[60%] bg-custom-white shadow-[-8px_0_30px_rgba(0,0,0,0.15)] translate-x-full transition-transform duration-500 ease-out pt-27.5 px-6 pb-8 overflow-y-auto 992:hidden"
+    <main>
+      <section
+        class="min-h-fit xl:min-h-265.25 bg-[url('/assets/img/programs-image/webp/hero.webp')] bg-center bg-cover px-4"
       >
-        <ul id="sidebarList" class="flex flex-col gap-2"></ul>
-      </aside>
+        <header class="h-20 md:h-25 items-center flex">
+          <div class="container max-w-285 mx-auto w-full">
+            <nav class="flex items-center justify-between xl:justify-normal">
+              <div class="right max-w-33 w-full">
+                <div class="logo w-full">
+                  <a href="#">
+                    <img
+                      class="w-full h-12.5 sm:h-auto"
+                      width="132"
+                      height="60"
+                      src="assets/img/svg/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                </div>
+              </div>
 
-      <!-- nav ending -->
-
-      <div class="container max-w-299.5 w-full mx-auto">
-        <div
-          class="row w-full flex items-center justify-center flex-col pt-10 xs:pt-15"
-        >
-          <div
-            class="top-part max-w-219 w-full flex items-center justify-center flex-col"
-          >
-            <button
-              data-aos="fade-down"
-              class="credit-impact max-w-135.75 w-full lg:h-10.5 border border-solid rounded-full border-custom-green py-1.5 px-5"
-            >
-              <span
-                class="text-[clamp(16px,1.39vw,20px)] font-medium leading-150 text-custom-green italic"
-                >No credit impact. Real humans. Same-day offers.</span
+              <div
+                id="navLinks"
+                class="middle ml-0 xl:ml-[196.5px] hidden 992:flex items-center gap-6"
               >
-            </button>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="index.html"
+                    >Home</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="programs.html"
+                    >Programs</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="how-it-works.html"
+                    >How It Works</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="#"
+                    >Testimonials</a
+                  >
+                </div>
+                <div class="middle-item">
+                  <a
+                    class="nav-link font-normal text-base leading-150 text-custom-gray hover:text-custom-black hover:[-webkit-text-stroke:1.2px_currentColor]"
+                    href="about.html"
+                    >About</a
+                  >
+                </div>
+              </div>
+
+              <div class="left flex items-center gap-4">
+                <button
+                  id="contactBtn"
+                  class="group ml-0 xl:ml-[172.5px] xs:px-8 btn hidden 992:block max-w-38.75 w-full h-14 px-5 border-2 border-solid border-custom-black rounded-full cursor-pointer overflow-hidden relative transition-all hover:border-custom-green"
+                >
+                  <span
+                    class="relative z-10 text-custom-black group-hover:text-custom-white font-semibold text-base text-nowrap leading-100 transition-colors duration-300"
+                    >Contact Us</span
+                  >
+                  <span
+                    class="absolute inset-0 bg-custom-green scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                  ></span>
+                </button>
+
+                <button
+                  id="menuBtn"
+                  type="button"
+                  aria-label="Toggle menu"
+                  aria-expanded="false"
+                  aria-controls="sidebar"
+                  class="992:hidden relative z-60 w-10 h-10 flex flex-col items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
+                  ></span>
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300"
+                  ></span>
+                  <span
+                    class="bar block h-0.75 w-7 rounded-full bg-custom-green transition-all duration-300 origin-center"
+                  ></span>
+                </button>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div
+          id="overlay"
+          class="fixed inset-0 z-40 bg-black/30 opacity-0 pointer-events-none transition-opacity duration-300 992:hidden"
+        ></div>
+
+        <aside
+          id="sidebar"
+          aria-hidden="true"
+          inert
+          class="fixed top-0 right-0 z-50 h-full w-[60%] bg-custom-white shadow-[-8px_0_30px_rgba(0,0,0,0.15)] translate-x-full transition-transform duration-500 ease-out pt-27.5 px-6 pb-8 overflow-y-auto 992:hidden"
+        >
+          <ul id="sidebarList" class="flex flex-col gap-2"></ul>
+        </aside>
+
+        <!-- nav ending -->
+
+        <div class="container max-w-299.5 w-full mx-auto">
+          <div
+            class="row w-full flex items-center justify-center flex-col pt-10 xs:pt-15"
+          >
+            <div
+              class="top-part max-w-219 w-full flex items-center justify-center flex-col"
+            >
+              <button
+                data-aos="fade-down"
+                class="credit-impact max-w-135.75 w-full lg:h-10.5 border border-solid rounded-full border-custom-green py-1.5 px-5"
+              >
+                <span
+                  class="text-[clamp(16px,1.39vw,20px)] font-medium leading-150 text-custom-green italic"
+                  >No credit impact. Real humans. Same-day offers.</span
+                >
+              </button>
+              <h1
+                data-aos="fade-up"
+                data-aos-delay="100"
+                class="text-[clamp(28px,4.5vw,52px)] mt-3 w-full text-custom-black font-bold leading-120 text-center"
+              >
+                We Don’t Fit You Into a Product. We Fit the Product to You.
+              </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="text-center max-w-173 w-full font-semibold mt-3 text-custom-green text-[clamp(14px,1.25vw,18px)] leading-124"
+              >
+                We start with your story — not your score. <br />
+                Apply in minutes. Get funded same day. No banks. No brokers.
+                Just Rabbit.
+              </p>
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                class="w-full max-w-89"
+              >
+                <button
+                  class="start-btn btn-wobble mt-3 sm:mt-6 group relative isolate cursor-pointer max-w-89 w-full text-nowrap h-12.5 sm:h-15 rounded-full bg-custom-green border-2 border-custom-green sm:px-8 flex items-center justify-center gap-1.5 overflow-hidden"
+                >
+                  <span
+                    class="absolute inset-0 z-0 bg-custom-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
+                  ></span>
+
+                  <span
+                    class="relative z-10 text-custom-white font-semibold text-sm sm:text-base leading-100 transition-colors duration-300 group-hover:text-custom-green"
+                  >
+                    Start My 60-Second Application
+                  </span>
+
+                  <span
+                    class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 10.41L6.393 19.017L4.979 17.603L13.586 8.996H6V6.996H17V17.996H15V10.411V10.41Z"
+                        class="fill-custom-white transition-colors duration-300 group-hover:fill-custom-green"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              class="bottom-img max-w-299.5 w-full mt-[clamp(24px,2.5vw,36px)]"
+            >
+              <img
+                width="1198"
+                height="545"
+                class="object-cover max-w-299.5 w-full xl:w-299.5 xl:h-136.25"
+                src="assets/img/programs-image/webp/people-sitting.webp"
+                alt="people-sitting"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="min-h-fit px-4">
+        <div class="container max-w-285 w-full mx-auto">
+          <div
+            class="row py-15 md:py-20 lg:py-42.5 flex items-center justify-center flex-col"
+          >
             <h1
               data-aos="fade-up"
-              data-aos-delay="100"
-              class="text-[clamp(28px,4.5vw,52px)] mt-3 w-full text-custom-black font-bold leading-120 text-center"
+              class="text-[clamp(28px,5vw,48px)] w-full font-bold leading-121 text-custom-black text-center"
             >
-              We Don’t Fit You Into a Product. We Fit the Product to You.
+              What We Fund
             </h1>
             <p
               data-aos="fade-up"
-              data-aos-delay="200"
-              class="text-center max-w-173 w-full font-semibold mt-3 text-custom-green text-[clamp(14px,1.25vw,18px)] leading-124"
+              data-aos-delay="100"
+              class="text-base text-custom-gray leading-150 font-normal text-center max-w-185 w-full mt-3"
             >
-              We start with your story — not your score. <br />
-              Apply in minutes. Get funded same day. No banks. No brokers. Just
-              Rabbit.
+              Every business is different — so we built a flexible set of tools
+              that let us tailor the deal to you.
             </p>
             <div
-              data-aos="zoom-in"
-              data-aos-delay="300"
-              class="w-full max-w-89"
+              class="card-container mt-[clamp(30px,5vw,60px)] w-full flex items-center justify-center flex-col 992:grid 992:grid-cols-2 gap-4 sm:gap-6"
+              id="card-container-1"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="min-h-fit px-4 bg-green-gradient">
+        <div class="container max-w-206.25 w-full mx-auto">
+          <div class="row relative w-full py-10 md:py-15 lg:py-25">
+            <img
+              width="825"
+              height="525"
+              class="opacity-2 absolute object-cover"
+              src="assets/img/programs-image/svg/rabbit-subtract.svg"
+              alt="rabbit-subtract"
+            />
+
+            <div
+              class="content max-w-183.75 w-full mx-auto py-5 md:py-10 lg:py-20 flex items-center justify-center flex-col"
             >
+              <h1
+                data-aos="fade-up"
+                class="max-w-159.75 w-full text-[clamp(28px,5vw,48px)] text-custom-black text-center font-bold leading-121"
+              >
+                Tell Us Your Story <br />
+                We’ll Take It From There.
+              </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                class="mt-2 text-center text-custom-gray leading-150 w-full max-w-180 text-[clamp(16px,1.39vw,20px)]"
+              >
+                We’ll build a funding plan based on your goals — not just your
+                numbers.
+              </p>
               <button
-                class="start-btn btn-wobble mt-3 sm:mt-6 group relative isolate cursor-pointer max-w-89 w-full text-nowrap h-12.5 sm:h-15 rounded-full bg-custom-green border-2 border-custom-green sm:px-8 flex items-center justify-center gap-1.5 overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                class="story-btn group mt-4 relative isolate cursor-pointer w-57 text-nowrap h-12.5 sm:h-15 rounded-full bg-custom-green border-2 border-custom-green px-5 sm:px-8 flex items-center justify-center gap-1.5 overflow-hidden"
               >
                 <span
                   class="absolute inset-0 z-0 bg-custom-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
                 ></span>
 
                 <span
-                  class="relative z-10 text-custom-white font-semibold text-sm sm:text-base leading-100 transition-colors duration-300 group-hover:text-custom-green"
+                  class="relative z-10 text-custom-white font-semibold text-base leading-100 transition-colors duration-300 group-hover:text-custom-green"
                 >
-                  Start My 60-Second Application
+                  Find My Best Fit
                 </span>
 
                 <span
@@ -218,299 +325,194 @@
                   </svg>
                 </span>
               </button>
+
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="300"
+                class="text-[clamp(18px,1.94vw,28px)] text-center text-custom-dark-green italic font-semibold mt-[clamp(24px,2.29vw,33px)] leading-122"
+              >
+                Every business is different — so we build funding around your
+                story, not your statements. Fast, flexible, and built for how
+                you actually operate.”
+              </h2>
             </div>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="1000"
-            class="bottom-img max-w-299.5 w-full mt-[clamp(24px,2.5vw,36px)]"
-          >
-            <img
-              width="1198"
-              height="545"
-              class="object-cover max-w-299.5 w-full xl:w-299.5 xl:h-136.25"
-              src="assets/img/programs-image/webp/people-sitting.webp"
-              alt="people-sitting"
-            />
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="min-h-fit px-4">
-      <div class="container max-w-285 w-full mx-auto">
-        <div
-          class="row py-15 md:py-20 lg:py-42.5 flex items-center justify-center flex-col"
-        >
-          <h1
-            data-aos="fade-up"
-            class="text-[clamp(28px,5vw,48px)] w-full font-bold leading-121 text-custom-black text-center"
-          >
-            What We Fund
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="100"
-            class="text-base text-custom-gray leading-150 font-normal text-center max-w-185 w-full mt-3"
-          >
-            Every business is different — so we built a flexible set of tools
-            that let us tailor the deal to you.
-          </p>
+      </section>
+      <section class="min-h-fit px-4">
+        <div class="container max-w-285 w-full mx-auto">
           <div
-            class="card-container mt-[clamp(30px,5vw,60px)] w-full flex items-center justify-center flex-col 992:grid 992:grid-cols-2 gap-4 sm:gap-6"
-            id="card-container-1"
-          ></div>
-        </div>
-      </div>
-    </section>
-    <section class="min-h-fit px-4 bg-green-gradient">
-      <div class="container max-w-206.25 w-full mx-auto">
-        <div class="row relative w-full py-10 md:py-15 lg:py-25">
-          <img
-            width="825"
-            height="525"
-            class="opacity-2 absolute object-cover"
-            src="assets/img/programs-image/svg/rabbit-subtract.svg"
-            alt="rabbit-subtract"
-          />
-
-          <div
-            class="content max-w-183.75 w-full mx-auto py-5 md:py-10 lg:py-20 flex items-center justify-center flex-col"
+            class="row w-full flex items-center justify-center flex-col pt-10 pb-15 md:py-20 lg:py-42.5"
           >
             <h1
               data-aos="fade-up"
-              class="max-w-159.75 w-full text-[clamp(28px,5vw,48px)] text-custom-black text-center font-bold leading-121"
+              class="text-[clamp(28px,5vw,48px)] text-center text-custom-black leading-121 w-full font-bold"
             >
-              Tell Us Your Story <br />
-              We’ll Take It From There.
+              What We Actually Believe
             </h1>
-            <p
-              data-aos="fade-up"
-              data-aos-delay="100"
-              class="mt-2 text-center text-custom-gray leading-150 w-full max-w-180 text-[clamp(16px,1.39vw,20px)]"
-            >
-              We’ll build a funding plan based on your goals — not just your
-              numbers.
-            </p>
-            <button
-              data-aos="zoom-in"
-              data-aos-delay="200"
-              class="story-btn group mt-4 relative isolate cursor-pointer w-57 text-nowrap h-12.5 sm:h-15 rounded-full bg-custom-green border-2 border-custom-green px-5 sm:px-8 flex items-center justify-center gap-1.5 overflow-hidden"
-            >
-              <span
-                class="absolute inset-0 z-0 bg-custom-white scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"
-              ></span>
-
-              <span
-                class="relative z-10 text-custom-white font-semibold text-base leading-100 transition-colors duration-300 group-hover:text-custom-green"
-              >
-                Find My Best Fit
-              </span>
-
-              <span
-                class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15 10.41L6.393 19.017L4.979 17.603L13.586 8.996H6V6.996H17V17.996H15V10.411V10.41Z"
-                    class="fill-custom-white transition-colors duration-300 group-hover:fill-custom-green"
-                  />
-                </svg>
-              </span>
-            </button>
-
-            <h2
-              data-aos="fade-up"
-              data-aos-delay="300"
-              class="text-[clamp(18px,1.94vw,28px)] text-center text-custom-dark-green italic font-semibold mt-[clamp(24px,2.29vw,33px)] leading-122"
-            >
-              Every business is different — so we build funding around your
-              story, not your statements. Fast, flexible, and built for how you
-              actually operate.”
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="min-h-fit px-4">
-      <div class="container max-w-285 w-full mx-auto">
-        <div
-          class="row w-full flex items-center justify-center flex-col pt-10 pb-15 md:py-20 lg:py-42.5"
-        >
-          <h1
-            data-aos="fade-up"
-            class="text-[clamp(28px,5vw,48px)] text-center text-custom-black leading-121 w-full font-bold"
-          >
-            What We Actually Believe
-          </h1>
-          <div
-            class="cards flex flex-wrap items-center justify-center gap-5 xs:gap-6 sm:gap-9 mt-[clamp(30px,5vw,60px)]"
-          >
             <div
-              data-aos="fade-up"
-              data-aos-delay="0"
-              class="w-full max-w-89 flex justify-center"
+              class="cards flex flex-wrap items-center justify-center gap-5 xs:gap-6 sm:gap-9 mt-[clamp(30px,5vw,60px)]"
             >
               <div
-                class="card-1 flex items-center justify-center flex-col cursor-pointer hover:-translate-y-1.5 transition-all duration-300 ease-in-out bg-custom-white p-5 sm:p-9 shadow-custom-card max-w-89 w-full rounded-24"
+                data-aos="fade-up"
+                data-aos-delay="0"
+                class="w-full max-w-89 flex justify-center"
               >
-                <svg
-                  class="h-[clamp(54px,6.67vw,96px)] w-[clamp(54px,6.67vw,96px)]"
-                  width="96"
-                  height="96"
-                  viewBox="0 0 96 96"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  class="card-1 flex items-center justify-center flex-col cursor-pointer hover:-translate-y-1.5 transition-all duration-300 ease-in-out bg-custom-white p-5 sm:p-9 shadow-custom-card max-w-89 w-full rounded-24"
                 >
-                  <rect
-                    class=""
+                  <svg
+                    class="h-[clamp(54px,6.67vw,96px)] w-[clamp(54px,6.67vw,96px)]"
                     width="96"
                     height="96"
-                    rx="48"
-                    fill="#F5F5F5"
-                  />
-                  <path
-                    d="M20.4063 32.4025C20.1463 32.6616 20.0001 33.0135 20.0001 33.3805V45.8766C20.0001 59.955 19.9763 59.4446 20.584 59.777C20.9057 59.9432 29.3414 59.9432 29.6631 59.777C30.2707 59.4446 30.2469 59.955 30.2469 45.8766V33.3805C30.2469 33.0135 30.1007 32.6616 29.8407 32.4025C29.582 32.1447 29.2316 32 28.8663 32H21.3807C21.0154 32 20.6651 32.1447 20.4063 32.4025ZM26.5175 52.8446C27.435 53.5924 27.7805 54.4709 27.5065 55.4442C26.8988 57.5928 23.9916 57.937 22.9788 55.9784C22.4665 54.9932 22.5856 54.0317 23.2886 53.2601C23.8963 52.5835 24.3252 52.4054 25.2665 52.441C25.9456 52.4766 26.1244 52.536 26.5175 52.8446Z"
-                    fill="#2B2B2B"
-                  />
-                  <path
-                    d="M44.6877 32.2612C44.4017 32.4748 37.1337 40.6655 35.5609 42.5647C35.263 42.9209 35.2273 43.0396 35.2869 43.5619C35.3345 44.1435 35.3822 44.2029 36.5737 45.3543C38.4205 47.123 39.612 47.6691 41.6613 47.6691C42.9004 47.6691 44.1158 47.3486 45.057 46.7669C45.3311 46.5889 46.4511 45.568 47.5353 44.4996L47.9573 44.0842C48.8882 43.168 50.2981 42.9439 51.4672 43.5263C52.7447 44.1548 53.822 45.1265 54.5786 46.3326L56.5787 49.5209C60.1889 55.2662 59.9029 54.9576 61.5233 54.8863C62.4408 54.8507 62.548 54.827 62.8816 54.5065C63.1177 54.2789 63.251 53.9651 63.251 53.6373V44.5353C63.251 35.5968 63.2272 34.8845 63.0365 34.659C62.9293 34.5165 61.9284 33.8755 60.8084 33.2345C59.4812 32.4645 57.9756 32.0552 56.4412 32.0472L51.92 32.0237L45.5311 32.0016C45.2301 32.0006 44.936 32.0911 44.6877 32.2612Z"
-                    fill="#2B2B2B"
-                  />
-                  <path
-                    d="M66.1593 32.4025C65.8993 32.6616 65.7531 33.0135 65.7531 33.3805V45.8766C65.7531 59.955 65.7293 59.4446 66.3369 59.777C66.6586 59.9432 75.0943 59.9432 75.416 59.777C76.0237 59.4446 75.9999 59.955 75.9999 45.8766V33.3805C75.9999 33.0135 75.8537 32.6616 75.5937 32.4025C75.3349 32.1447 74.9846 32 74.6193 32H67.1337C66.7684 32 66.418 32.1447 66.1593 32.4025ZM72.2705 52.8446C73.188 53.5924 73.5335 54.4709 73.2595 55.4442C72.6518 57.5928 69.7446 57.937 68.7318 55.9784C68.2195 54.9932 68.3386 54.0317 69.0416 53.2601C69.6493 52.5835 70.0782 52.4054 71.0195 52.441C71.6986 52.4766 71.8773 52.536 72.2705 52.8446Z"
-                    fill="#2B2B2B"
-                  />
-                  <path
-                    d="M33.583 34.5759C33.4877 34.6115 33.2613 34.7777 33.0826 34.9439C32.8699 35.1406 32.749 35.4173 32.749 35.707V52.6649C32.749 54.9081 33.3778 57.1063 34.5639 59.0103L35.3226 60.2281C36.7405 62.4953 38.0511 64.4896 38.2417 64.6676C38.4634 64.8809 38.7591 65 39.0667 65H49.3578C51.2077 65 53.0325 64.5723 54.6897 63.7503L54.9225 63.6349C57.5319 62.3291 57.8059 62.163 60.2723 60.3112C61.7021 59.2428 62.9531 58.2457 63.0604 58.0914C63.1676 57.9489 63.251 57.6996 63.251 57.5572C63.251 57.2842 63.2391 57.2842 61.7259 57.2842C59.9268 57.2842 59.2714 57.1299 58.4374 56.4888C57.9489 56.109 57.3889 55.3018 54.8034 51.1827L52.2895 47.1912C51.9383 46.6335 51.4447 46.1798 50.8596 45.8766C50.3326 45.607 49.6924 45.7036 49.2685 46.1167L48.3574 47.0043C46.9038 48.4288 46.6179 48.6424 45.6051 49.141C44.08 49.8888 43.2221 50.0906 41.6256 50.0906C38.8971 50.0906 37.0383 49.2004 34.6315 46.755C33.1303 45.2356 32.8205 44.6183 32.892 43.3007C32.9158 42.6716 33.0111 42.2205 33.1899 41.8525C33.3447 41.5558 34.7745 39.8227 36.383 37.9946C37.9796 36.1665 39.3022 34.6353 39.3022 34.5759C39.3022 34.4809 33.8571 34.4809 33.583 34.5759Z"
-                    fill="#2B2B2B"
-                  />
-                </svg>
-                <p
-                  class="mt-[clamp(16px,2.22vw,32px)] text-lg sm:text-xl md:text-[28px] text-center font-semibold leading-122"
-                >
-                  People over paperwork
-                </p>
+                    viewBox="0 0 96 96"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      class=""
+                      width="96"
+                      height="96"
+                      rx="48"
+                      fill="#F5F5F5"
+                    />
+                    <path
+                      d="M20.4063 32.4025C20.1463 32.6616 20.0001 33.0135 20.0001 33.3805V45.8766C20.0001 59.955 19.9763 59.4446 20.584 59.777C20.9057 59.9432 29.3414 59.9432 29.6631 59.777C30.2707 59.4446 30.2469 59.955 30.2469 45.8766V33.3805C30.2469 33.0135 30.1007 32.6616 29.8407 32.4025C29.582 32.1447 29.2316 32 28.8663 32H21.3807C21.0154 32 20.6651 32.1447 20.4063 32.4025ZM26.5175 52.8446C27.435 53.5924 27.7805 54.4709 27.5065 55.4442C26.8988 57.5928 23.9916 57.937 22.9788 55.9784C22.4665 54.9932 22.5856 54.0317 23.2886 53.2601C23.8963 52.5835 24.3252 52.4054 25.2665 52.441C25.9456 52.4766 26.1244 52.536 26.5175 52.8446Z"
+                      fill="#2B2B2B"
+                    />
+                    <path
+                      d="M44.6877 32.2612C44.4017 32.4748 37.1337 40.6655 35.5609 42.5647C35.263 42.9209 35.2273 43.0396 35.2869 43.5619C35.3345 44.1435 35.3822 44.2029 36.5737 45.3543C38.4205 47.123 39.612 47.6691 41.6613 47.6691C42.9004 47.6691 44.1158 47.3486 45.057 46.7669C45.3311 46.5889 46.4511 45.568 47.5353 44.4996L47.9573 44.0842C48.8882 43.168 50.2981 42.9439 51.4672 43.5263C52.7447 44.1548 53.822 45.1265 54.5786 46.3326L56.5787 49.5209C60.1889 55.2662 59.9029 54.9576 61.5233 54.8863C62.4408 54.8507 62.548 54.827 62.8816 54.5065C63.1177 54.2789 63.251 53.9651 63.251 53.6373V44.5353C63.251 35.5968 63.2272 34.8845 63.0365 34.659C62.9293 34.5165 61.9284 33.8755 60.8084 33.2345C59.4812 32.4645 57.9756 32.0552 56.4412 32.0472L51.92 32.0237L45.5311 32.0016C45.2301 32.0006 44.936 32.0911 44.6877 32.2612Z"
+                      fill="#2B2B2B"
+                    />
+                    <path
+                      d="M66.1593 32.4025C65.8993 32.6616 65.7531 33.0135 65.7531 33.3805V45.8766C65.7531 59.955 65.7293 59.4446 66.3369 59.777C66.6586 59.9432 75.0943 59.9432 75.416 59.777C76.0237 59.4446 75.9999 59.955 75.9999 45.8766V33.3805C75.9999 33.0135 75.8537 32.6616 75.5937 32.4025C75.3349 32.1447 74.9846 32 74.6193 32H67.1337C66.7684 32 66.418 32.1447 66.1593 32.4025ZM72.2705 52.8446C73.188 53.5924 73.5335 54.4709 73.2595 55.4442C72.6518 57.5928 69.7446 57.937 68.7318 55.9784C68.2195 54.9932 68.3386 54.0317 69.0416 53.2601C69.6493 52.5835 70.0782 52.4054 71.0195 52.441C71.6986 52.4766 71.8773 52.536 72.2705 52.8446Z"
+                      fill="#2B2B2B"
+                    />
+                    <path
+                      d="M33.583 34.5759C33.4877 34.6115 33.2613 34.7777 33.0826 34.9439C32.8699 35.1406 32.749 35.4173 32.749 35.707V52.6649C32.749 54.9081 33.3778 57.1063 34.5639 59.0103L35.3226 60.2281C36.7405 62.4953 38.0511 64.4896 38.2417 64.6676C38.4634 64.8809 38.7591 65 39.0667 65H49.3578C51.2077 65 53.0325 64.5723 54.6897 63.7503L54.9225 63.6349C57.5319 62.3291 57.8059 62.163 60.2723 60.3112C61.7021 59.2428 62.9531 58.2457 63.0604 58.0914C63.1676 57.9489 63.251 57.6996 63.251 57.5572C63.251 57.2842 63.2391 57.2842 61.7259 57.2842C59.9268 57.2842 59.2714 57.1299 58.4374 56.4888C57.9489 56.109 57.3889 55.3018 54.8034 51.1827L52.2895 47.1912C51.9383 46.6335 51.4447 46.1798 50.8596 45.8766C50.3326 45.607 49.6924 45.7036 49.2685 46.1167L48.3574 47.0043C46.9038 48.4288 46.6179 48.6424 45.6051 49.141C44.08 49.8888 43.2221 50.0906 41.6256 50.0906C38.8971 50.0906 37.0383 49.2004 34.6315 46.755C33.1303 45.2356 32.8205 44.6183 32.892 43.3007C32.9158 42.6716 33.0111 42.2205 33.1899 41.8525C33.3447 41.5558 34.7745 39.8227 36.383 37.9946C37.9796 36.1665 39.3022 34.6353 39.3022 34.5759C39.3022 34.4809 33.8571 34.4809 33.583 34.5759Z"
+                      fill="#2B2B2B"
+                    />
+                  </svg>
+                  <p
+                    class="mt-[clamp(16px,2.22vw,32px)] text-lg sm:text-xl md:text-[28px] text-center font-semibold leading-122"
+                  >
+                    People over paperwork
+                  </p>
+                </div>
               </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              class="w-full max-w-89 flex justify-center"
-            >
               <div
-                class="card-2 flex items-center justify-center flex-col cursor-pointer hover:-translate-y-1.5 transition-all duration-300 ease-in-out bg-custom-white py-5 sm:py-9 px-5 992:px-0 shadow-custom-card max-w-89 w-full rounded-24"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="w-full max-w-89 flex justify-center"
               >
-                <svg
-                  class="h-[clamp(54px,6.67vw,96px)] w-[clamp(54px,6.67vw,96px)]"
-                  width="96"
-                  height="96"
-                  viewBox="0 0 96 96"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  class="card-2 flex items-center justify-center flex-col cursor-pointer hover:-translate-y-1.5 transition-all duration-300 ease-in-out bg-custom-white py-5 sm:py-9 px-5 992:px-0 shadow-custom-card max-w-89 w-full rounded-24"
                 >
-                  <rect width="96" height="96" rx="48" fill="#F5F5F5" />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M43.52 26.0726C43.366 26.134 42.8753 26.3408 42.4298 26.5324L41.6194 26.8809L42.2898 27.664C43.002 28.4962 43.0748 28.7499 42.7669 29.3255C42.4171 29.9789 41.65 29.7773 40.6864 28.7788C38.4397 26.4501 35.0086 26.2758 32.6636 28.3714L31.8551 29.0938L32.4147 29.3098C33.6105 29.7713 33.9393 30.4669 33.2544 31.0867C32.8941 31.4126 32.8404 31.4128 31.7749 31.0901C30.4309 30.6832 28.2586 30.7652 27.3079 31.2586C26.011 31.9317 24.2963 33.8997 24.2963 34.7153C24.2963 34.8374 24.6982 34.8645 25.4085 34.7904C26.466 34.6797 26.5309 34.6971 26.734 35.1427C27.0504 35.837 26.6967 36.3512 25.7396 36.5886C23.7446 37.0836 22.1853 38.4341 21.5029 40.2575C20.5533 42.7956 21.4936 45.5782 23.8232 47.1245C24.6901 47.6999 24.8563 47.8992 24.8563 48.3641C24.8563 49.1633 24.1088 49.4901 23.3184 49.0364C23.0072 48.8578 22.7163 48.7482 22.6717 48.7928C22.4917 48.9727 23.4596 50.5276 24.3141 51.4309C25.5649 52.7534 27.7032 53.7441 29.3355 53.7572C29.7874 53.7609 29.8032 53.7183 29.8378 52.4087C29.9346 48.7407 32.296 45.4442 35.9291 43.9046C37.0265 43.4397 37.2814 43.4119 41.318 43.3171C44.1672 43.2503 45.6262 43.1465 45.7717 43.0005C45.8908 42.8813 46.0614 42.3923 46.1508 41.9139C46.5168 39.9552 47.446 39.3915 50.3094 39.3915C52.2088 39.3915 52.2949 39.4091 52.589 39.8581C52.8721 40.2904 52.8721 40.3591 52.589 40.7913C52.2973 41.2366 52.1995 41.2579 50.4502 41.2579C48.3632 41.2579 48.1301 41.3872 47.936 42.6534C47.7984 43.5519 47.3335 44.212 46.4865 44.7107C45.9186 45.0453 45.4169 45.0937 41.6487 45.1773L37.4445 45.2706L36.1491 45.9089C31.3014 48.2969 30.2206 54.4789 33.9916 58.2497C36.2286 60.4867 39.648 61.0939 42.4979 59.7603C43.681 59.2066 45.3927 57.8193 45.3792 57.425C45.3753 57.3096 45.0394 56.9852 44.6327 56.704C43.7503 56.0935 43.6411 55.4294 44.3473 54.9668C44.8557 54.6336 45.0778 54.7081 46.3697 55.6439C48.2092 56.9765 51.4162 57.8126 53.785 57.5773C55.223 57.4345 57.2538 56.7928 58.5229 56.0804C59.7105 55.4139 61.6295 53.6105 62.3561 52.4781L62.9306 51.583L62.3738 50.5731C61.709 49.3671 61.6398 48.4546 62.1907 48.1597C62.8356 47.8146 63.2667 48.1263 63.8578 49.3649C65.1601 52.0935 68.0004 53.3895 70.8582 52.5586C72.3436 52.1269 74.0838 50.422 74.5566 48.9352C75.2637 46.7116 74.7395 44.6103 73.0691 42.9718C72.5127 42.4259 71.964 42.0104 71.8498 42.0485C71.7355 42.0866 71.526 42.5164 71.3839 43.0033C71.1172 43.9177 70.6572 44.2775 69.9806 44.1006C69.4728 43.9679 69.3869 43.2447 69.721 41.9145C70.313 39.5575 70.0157 36.8413 68.9455 34.8329C68.2102 33.4524 66.2383 31.5474 64.8126 30.8396C64.1542 30.5128 63.5827 30.2782 63.5427 30.3182C63.5028 30.3581 63.6422 30.6733 63.8526 31.0184C64.5103 32.097 64.2835 33.0459 63.3682 33.0459C62.9302 33.0459 62.8386 32.9419 61.6181 31.0612C59.0711 27.136 53.6823 25.7975 49.3111 28.0041C48.0394 28.6459 47.7693 28.6832 47.3593 28.2734C46.9518 27.8658 46.9933 27.3424 47.4679 26.9003L47.8697 26.5261L47.3279 26.3079C46.7303 26.0673 43.9628 25.8962 43.52 26.0726ZM63.3778 54.2643C62.875 54.9302 61.9597 55.8923 61.3438 56.4022C59.5358 57.8988 56.1491 59.3617 54.4923 59.3617C54.2059 59.3617 53.9716 59.453 53.9716 59.5646C53.9716 59.676 54.4168 60.201 54.961 60.731C56.7422 62.4662 59.0211 63.2999 61.997 63.3048C65.8486 63.3113 69.1762 61.4419 70.5138 58.5201C70.8987 57.6793 70.9631 57.2872 70.917 56.0616L70.8623 54.6032L69.5196 54.6657C67.9489 54.7389 66.431 54.3611 65.1508 53.5786L64.2919 53.0535L63.3778 54.2643ZM46.609 59.0526C46.0382 59.8008 46.0157 60.1937 46.4979 60.9847C46.9907 61.7926 47.653 62.1919 48.8031 62.3736C49.3339 62.4574 50.0039 62.6239 50.2924 62.7434C50.5842 62.8641 52.1861 64.5229 53.9014 66.4804C56.5597 69.5136 57.0599 70 57.5213 70C58.4336 70 58.6375 69.4632 58.6375 67.0616V64.9528L58.1243 64.7437C55.0883 63.5065 53.6101 62.4227 52.2727 60.4531C51.6525 59.5401 51.4423 59.3617 50.9856 59.3617C50.6853 59.3617 49.7857 59.1528 48.9862 58.8975C48.1868 58.6422 47.4319 58.4322 47.3089 58.4309C47.1857 58.4296 46.8708 58.7094 46.609 59.0526Z"
-                    fill="#2B2B2B"
-                  />
-                </svg>
+                  <svg
+                    class="h-[clamp(54px,6.67vw,96px)] w-[clamp(54px,6.67vw,96px)]"
+                    width="96"
+                    height="96"
+                    viewBox="0 0 96 96"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="96" height="96" rx="48" fill="#F5F5F5" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M43.52 26.0726C43.366 26.134 42.8753 26.3408 42.4298 26.5324L41.6194 26.8809L42.2898 27.664C43.002 28.4962 43.0748 28.7499 42.7669 29.3255C42.4171 29.9789 41.65 29.7773 40.6864 28.7788C38.4397 26.4501 35.0086 26.2758 32.6636 28.3714L31.8551 29.0938L32.4147 29.3098C33.6105 29.7713 33.9393 30.4669 33.2544 31.0867C32.8941 31.4126 32.8404 31.4128 31.7749 31.0901C30.4309 30.6832 28.2586 30.7652 27.3079 31.2586C26.011 31.9317 24.2963 33.8997 24.2963 34.7153C24.2963 34.8374 24.6982 34.8645 25.4085 34.7904C26.466 34.6797 26.5309 34.6971 26.734 35.1427C27.0504 35.837 26.6967 36.3512 25.7396 36.5886C23.7446 37.0836 22.1853 38.4341 21.5029 40.2575C20.5533 42.7956 21.4936 45.5782 23.8232 47.1245C24.6901 47.6999 24.8563 47.8992 24.8563 48.3641C24.8563 49.1633 24.1088 49.4901 23.3184 49.0364C23.0072 48.8578 22.7163 48.7482 22.6717 48.7928C22.4917 48.9727 23.4596 50.5276 24.3141 51.4309C25.5649 52.7534 27.7032 53.7441 29.3355 53.7572C29.7874 53.7609 29.8032 53.7183 29.8378 52.4087C29.9346 48.7407 32.296 45.4442 35.9291 43.9046C37.0265 43.4397 37.2814 43.4119 41.318 43.3171C44.1672 43.2503 45.6262 43.1465 45.7717 43.0005C45.8908 42.8813 46.0614 42.3923 46.1508 41.9139C46.5168 39.9552 47.446 39.3915 50.3094 39.3915C52.2088 39.3915 52.2949 39.4091 52.589 39.8581C52.8721 40.2904 52.8721 40.3591 52.589 40.7913C52.2973 41.2366 52.1995 41.2579 50.4502 41.2579C48.3632 41.2579 48.1301 41.3872 47.936 42.6534C47.7984 43.5519 47.3335 44.212 46.4865 44.7107C45.9186 45.0453 45.4169 45.0937 41.6487 45.1773L37.4445 45.2706L36.1491 45.9089C31.3014 48.2969 30.2206 54.4789 33.9916 58.2497C36.2286 60.4867 39.648 61.0939 42.4979 59.7603C43.681 59.2066 45.3927 57.8193 45.3792 57.425C45.3753 57.3096 45.0394 56.9852 44.6327 56.704C43.7503 56.0935 43.6411 55.4294 44.3473 54.9668C44.8557 54.6336 45.0778 54.7081 46.3697 55.6439C48.2092 56.9765 51.4162 57.8126 53.785 57.5773C55.223 57.4345 57.2538 56.7928 58.5229 56.0804C59.7105 55.4139 61.6295 53.6105 62.3561 52.4781L62.9306 51.583L62.3738 50.5731C61.709 49.3671 61.6398 48.4546 62.1907 48.1597C62.8356 47.8146 63.2667 48.1263 63.8578 49.3649C65.1601 52.0935 68.0004 53.3895 70.8582 52.5586C72.3436 52.1269 74.0838 50.422 74.5566 48.9352C75.2637 46.7116 74.7395 44.6103 73.0691 42.9718C72.5127 42.4259 71.964 42.0104 71.8498 42.0485C71.7355 42.0866 71.526 42.5164 71.3839 43.0033C71.1172 43.9177 70.6572 44.2775 69.9806 44.1006C69.4728 43.9679 69.3869 43.2447 69.721 41.9145C70.313 39.5575 70.0157 36.8413 68.9455 34.8329C68.2102 33.4524 66.2383 31.5474 64.8126 30.8396C64.1542 30.5128 63.5827 30.2782 63.5427 30.3182C63.5028 30.3581 63.6422 30.6733 63.8526 31.0184C64.5103 32.097 64.2835 33.0459 63.3682 33.0459C62.9302 33.0459 62.8386 32.9419 61.6181 31.0612C59.0711 27.136 53.6823 25.7975 49.3111 28.0041C48.0394 28.6459 47.7693 28.6832 47.3593 28.2734C46.9518 27.8658 46.9933 27.3424 47.4679 26.9003L47.8697 26.5261L47.3279 26.3079C46.7303 26.0673 43.9628 25.8962 43.52 26.0726ZM63.3778 54.2643C62.875 54.9302 61.9597 55.8923 61.3438 56.4022C59.5358 57.8988 56.1491 59.3617 54.4923 59.3617C54.2059 59.3617 53.9716 59.453 53.9716 59.5646C53.9716 59.676 54.4168 60.201 54.961 60.731C56.7422 62.4662 59.0211 63.2999 61.997 63.3048C65.8486 63.3113 69.1762 61.4419 70.5138 58.5201C70.8987 57.6793 70.9631 57.2872 70.917 56.0616L70.8623 54.6032L69.5196 54.6657C67.9489 54.7389 66.431 54.3611 65.1508 53.5786L64.2919 53.0535L63.3778 54.2643ZM46.609 59.0526C46.0382 59.8008 46.0157 60.1937 46.4979 60.9847C46.9907 61.7926 47.653 62.1919 48.8031 62.3736C49.3339 62.4574 50.0039 62.6239 50.2924 62.7434C50.5842 62.8641 52.1861 64.5229 53.9014 66.4804C56.5597 69.5136 57.0599 70 57.5213 70C58.4336 70 58.6375 69.4632 58.6375 67.0616V64.9528L58.1243 64.7437C55.0883 63.5065 53.6101 62.4227 52.2727 60.4531C51.6525 59.5401 51.4423 59.3617 50.9856 59.3617C50.6853 59.3617 49.7857 59.1528 48.9862 58.8975C48.1868 58.6422 47.4319 58.4322 47.3089 58.4309C47.1857 58.4296 46.8708 58.7094 46.609 59.0526Z"
+                      fill="#2B2B2B"
+                    />
+                  </svg>
 
-                <p
-                  class="mt-[clamp(16px,2.22vw,32px)] text-lg sm:text-xl md:text-[28px] text-center font-semibold leading-122"
-                >
-                  Listen to the story the numbers don’t tell
-                </p>
+                  <p
+                    class="mt-[clamp(16px,2.22vw,32px)] text-lg sm:text-xl md:text-[28px] text-center font-semibold leading-122"
+                  >
+                    Listen to the story the numbers don’t tell
+                  </p>
+                </div>
               </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              class="w-full max-w-89 flex justify-center"
-            >
               <div
-                class="card-3 flex items-center justify-center flex-col cursor-pointer hover:-translate-y-1.5 transition-all duration-300 ease-in-out bg-custom-white py-5 sm:py-9 px-5 992:px-0 shadow-custom-card max-w-89 w-full rounded-24"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                class="w-full max-w-89 flex justify-center"
               >
-                <svg
-                  class="h-[clamp(54px,6.67vw,96px)] w-[clamp(54px,6.67vw,96px)]"
-                  width="96"
-                  height="96"
-                  viewBox="0 0 96 96"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  class="card-3 flex items-center justify-center flex-col cursor-pointer hover:-translate-y-1.5 transition-all duration-300 ease-in-out bg-custom-white py-5 sm:py-9 px-5 992:px-0 shadow-custom-card max-w-89 w-full rounded-24"
                 >
-                  <rect width="96" height="96" rx="48" fill="#F5F5F5" />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M65.463 21.319C57.0948 22.6377 47.5986 28.3274 41.4144 35.7274L39.6655 37.8202L35.7154 37.827C31.3317 37.8347 30.1378 38.0537 28.3731 39.174C27.1331 39.9612 25.6206 41.5493 24.6193 43.1151C23.7772 44.4325 20.9731 49.9519 20.9731 50.2925C20.9731 50.437 23.0846 50.5142 27.0415 50.5142H33.1096L39.2844 56.6916L45.459 62.8692V68.9345C45.459 72.8894 45.5361 75 45.6807 75C46.0213 75 51.5406 72.1959 52.8581 71.3538C54.4238 70.3525 56.0119 68.8401 56.7992 67.6C57.9223 65.8307 58.1391 64.6432 58.14 60.2578L58.1407 56.3077L59.4533 55.2469C66.7654 49.3373 72.5388 40.3425 74.4288 31.9148C74.6756 30.814 74.8304 28.7959 74.9097 25.6457L75.0267 21L71.1195 21.0216C68.9704 21.0334 66.425 21.1672 65.463 21.319ZM56.2083 34.1369C54.7621 34.8717 54.0946 36.0391 54.0946 37.834C54.0946 39.0111 54.1947 39.4332 54.6215 40.0559C55.8519 41.8519 58.0742 42.4817 59.9596 41.569C62.7742 40.2063 63.0872 36.2079 60.5186 34.4279C59.2976 33.5816 57.5355 33.4626 56.2083 34.1369ZM29.4647 60.296C27.2605 62.5457 26.3336 64.3047 25.2295 68.332C24.5363 70.8608 24.5332 71.2834 25.2083 71.2834C26.3557 71.2834 30.1313 70.1387 31.9981 69.2246C33.5626 68.4588 34.3157 67.9151 35.5652 66.6492L37.1489 65.0448L34.0304 61.9318L30.912 58.8188L29.4647 60.296Z"
-                    fill="#2B2B2B"
-                  />
-                </svg>
+                  <svg
+                    class="h-[clamp(54px,6.67vw,96px)] w-[clamp(54px,6.67vw,96px)]"
+                    width="96"
+                    height="96"
+                    viewBox="0 0 96 96"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="96" height="96" rx="48" fill="#F5F5F5" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M65.463 21.319C57.0948 22.6377 47.5986 28.3274 41.4144 35.7274L39.6655 37.8202L35.7154 37.827C31.3317 37.8347 30.1378 38.0537 28.3731 39.174C27.1331 39.9612 25.6206 41.5493 24.6193 43.1151C23.7772 44.4325 20.9731 49.9519 20.9731 50.2925C20.9731 50.437 23.0846 50.5142 27.0415 50.5142H33.1096L39.2844 56.6916L45.459 62.8692V68.9345C45.459 72.8894 45.5361 75 45.6807 75C46.0213 75 51.5406 72.1959 52.8581 71.3538C54.4238 70.3525 56.0119 68.8401 56.7992 67.6C57.9223 65.8307 58.1391 64.6432 58.14 60.2578L58.1407 56.3077L59.4533 55.2469C66.7654 49.3373 72.5388 40.3425 74.4288 31.9148C74.6756 30.814 74.8304 28.7959 74.9097 25.6457L75.0267 21L71.1195 21.0216C68.9704 21.0334 66.425 21.1672 65.463 21.319ZM56.2083 34.1369C54.7621 34.8717 54.0946 36.0391 54.0946 37.834C54.0946 39.0111 54.1947 39.4332 54.6215 40.0559C55.8519 41.8519 58.0742 42.4817 59.9596 41.569C62.7742 40.2063 63.0872 36.2079 60.5186 34.4279C59.2976 33.5816 57.5355 33.4626 56.2083 34.1369ZM29.4647 60.296C27.2605 62.5457 26.3336 64.3047 25.2295 68.332C24.5363 70.8608 24.5332 71.2834 25.2083 71.2834C26.3557 71.2834 30.1313 70.1387 31.9981 69.2246C33.5626 68.4588 34.3157 67.9151 35.5652 66.6492L37.1489 65.0448L34.0304 61.9318L30.912 58.8188L29.4647 60.296Z"
+                      fill="#2B2B2B"
+                    />
+                  </svg>
 
-                <p
-                  class="mt-[clamp(16px,2.22vw,32px)] text-lg sm:text-xl md:text-[28px] text-center font-semibold leading-122"
-                >
-                  Move faster than the problem does
-                </p>
+                  <p
+                    class="mt-[clamp(16px,2.22vw,32px)] text-lg sm:text-xl md:text-[28px] text-center font-semibold leading-122"
+                  >
+                    Move faster than the problem does
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="min-h-fit px-4">
-      <div class="container max-w-325 w-full mx-auto">
-        <div
-          class="row w-full flex flex-row items-center justify-center lg:justify-between gap-5 pb-15 md:pb-20 lg:pb-42.5"
-        >
+      </section>
+      <section class="min-h-fit px-4">
+        <div class="container max-w-325 w-full mx-auto">
           <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            class="left-quotation hidden lg:block max-w-47.5 w-full"
+            class="row w-full flex flex-row items-center justify-center lg:justify-between gap-5 pb-15 md:pb-20 lg:pb-42.5"
           >
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="left-quotation hidden lg:block max-w-47.5 w-full"
+            >
+              <img
+                width="190"
+                height="148"
+                class="object-contain md:h-auto md:w-full sm:h-30 sm:w-35 w-25 h-25"
+                src="assets/img/programs-image/svg/quotation-left.svg"
+                alt="left-quotation"
+              />
+            </div>
             <img
-              width="190"
-              height="148"
-              class="object-contain md:h-auto md:w-full sm:h-30 sm:w-35 w-25 h-25"
-              src="assets/img/programs-image/svg/quotation-left.svg"
-              alt="left-quotation"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              width="780"
+              height="278"
+              class="object-cover rounded-24"
+              src="assets/img/programs-image/svg/rating-card.svg"
+              alt="rating-card"
             />
-          </div>
-          <img
-            data-aos="zoom-in"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            width="780"
-            height="278"
-            class="object-cover rounded-24"
-            src="assets/img/programs-image/svg/rating-card.svg"
-            alt="rating-card"
-          />
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            class="right-quotation hidden lg:block max-w-47.5 w-full"
-          >
-            <img
-              width="190"
-              height="148"
-              class="object-contain md:h-auto md:w-full sm:h-30 sm:w-35 w-25 h-25"
-              src="assets/img/programs-image/svg/quotation-right.svg"
-              alt="quotation-right"
-            />
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              class="right-quotation hidden lg:block max-w-47.5 w-full"
+            >
+              <img
+                width="190"
+                height="148"
+                class="object-contain md:h-auto md:w-full sm:h-30 sm:w-35 w-25 h-25"
+                src="assets/img/programs-image/svg/quotation-right.svg"
+                alt="quotation-right"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer class="min-h-fit bg-accent-gray">
       <div class="mx-auto px-4 w-full max-w-257">
         <div

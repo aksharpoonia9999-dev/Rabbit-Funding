@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rating-section {
+  overflow-x: clip;
+}
+
+.rating-title {
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.34vw, 3rem);
+  line-height: 156%;
+  color: #2b2b2b;
+}
+
+.rating-slider-wrap {
+  margin: clamp(2rem, 4.17vw, 3.75rem)
+    max(clamp(1rem, 10.42vw, 9.375rem), calc((100vw - 1440px) / 2 + 9.375rem)) 0;
+}
+
+.rating-swiper {
+  overflow: hidden;
+}
+
+.rating-swiper .swiper-slide {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+.rating-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+  border-radius: 24px;
+}
+
+@media (min-width: 1024px) {
+  .rating-swiper {
+    overflow: visible;
+    clip-path: inset(-24px -100vw -24px 0);
+  }
+  .rating-swiper .swiper-slide {
+    width: 780px;
+  }
+}
+
+.rating-controls {
+  margin-top: clamp(1.25rem, 2.22vw, 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 1.11vw, 1rem);
+}
+
+.rating-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(3rem, 5.56vw, 5rem);
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  border-radius: 9999px;
+  background: #f5f5f5;
+  cursor: pointer;
+  outline: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+.rating-btn:hover {
+  background: #ececec;
+}
+.rating-btn:active {
+  background: #e3e3e3;
+  transform: scale(0.95);
+}
+.rating-btn:focus-visible {
+  box-shadow: 0 0 0 2px #2b2b2b;
+}
+.rating-btn svg {
+  display: block;
+  width: 50%;
+  height: 50%;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+.rating-btn--prev svg {
+  transform: scaleX(-1);
+}
+.rating-btn.is-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+.rating-btn.is-disabled svg {
+  opacity: 0.2;
+}
+.rating-btn.is-locked {
+  display: none;
+}
+
+main {
+  overflow-x: clip;
+}
+
+[data-aos]:not(.aos-animate) {
+  opacity: 0;
+}
+
+[data-aos="hop-in"] {
+  opacity: 0;
+  transform: translate3d(0, 70px, 0) scale(0.9);
+}
+
+[data-aos="hop-in"].aos-animate {
+  opacity: 1;
+  transform: none;
+  animation: hopIn 1s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+[data-aos="hop-in"][data-aos-delay="150"].aos-animate {
+  animation-delay: 0.15s;
+}
+
+[data-aos="hop-in"][data-aos-delay="300"].aos-animate {
+  animation-delay: 0.3s;
+}
+
+@keyframes hopIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 70px, 0) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    transform: translate3d(0, -14px, 0) scale(1.02);
+  }
+  78% {
+    transform: translate3d(0, 5px, 0) scale(0.995);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.card-container .card:nth-child(1) {
+  --icon-delay: 0.45s;
+}
+
+.card-container .card:nth-child(2) {
+  --icon-delay: 0.6s;
+}
+
+.card-container .card:nth-child(3) {
+  --icon-delay: 0.75s;
+}
+
+.card.aos-animate .svg-circle {
+  animation: iconPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)
+    var(--icon-delay, 0.45s) backwards;
+}
+
+@keyframes iconPop {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-120deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+[data-aos].aos-animate .anim-float {
+  animation: floatY 6s ease-in-out 1.3s infinite;
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+[data-aos].aos-animate .anim-wipe {
+  animation: wipeReveal 1.3s cubic-bezier(0.77, 0, 0.175, 1) 0.2s backwards;
+}
+
+@keyframes wipeReveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    transform: scale(1.15);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: scale(1);
+  }
+}
+
+.rating-slider-wrap.aos-animate .swiper-slide {
+  animation: slideRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.rating-slider-wrap.aos-animate .swiper-slide:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.rating-slider-wrap.aos-animate .swiper-slide:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.rating-slider-wrap.aos-animate .swiper-slide:nth-child(3) {
+  animation-delay: 0.55s;
+}
+
+.rating-slider-wrap.aos-animate .swiper-slide:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+@keyframes slideRise {
+  0% {
+    opacity: 0;
+    transform: translate3d(80px, 30px, 0) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .anim-float,
+  .anim-wipe,
+  .card .svg-circle,
+  .swiper-slide {
+    animation: none !important;
+  }
+}
